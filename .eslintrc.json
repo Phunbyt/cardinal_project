@@ -25,6 +25,7 @@
         "class-methods-use-this": "off",
         "no-useless-catch": "warn",
         "global-require": "warn",
+        "react/prop-types":"off",
         "no-use-before-define": [
             "error",
             {

@@ -1,0 +1,51 @@
+.register {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+
+}
+.createadmin {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 500px;
+   width: 100%;
+   margin: 1em auto;
+   padding: 0 1em;
+}
+
+.company_logo {
+   display: flex;
+   margin: 1.2em auto;
+}
+
+.header_text {
+   color: #002564;
+   font-size: 0.5rem;
+   text-align: center;
+}
+
+.header_text_bold {
+   font-weight: 800;
+}
+.header_text_thin {
+   font-weight: 400;
+}
+
+.register_form {
+   display: flex;
+   flex-direction: column;
+   max-width: 400px;
+   width: 100%;
+   font-size: 0.5rem;
+}
+
+.form_group {
+   padding: 0;
+}
+
+.form_group h2 {
+   margin-bottom: -0.5em;
+}
