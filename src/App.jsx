@@ -3,15 +3,20 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Register from './pages/adminpages/Register';
 import Login from './pages/adminpages/Login';
+import Dashboard from './pages/adminpages/Dashboard';
+import { GlobalContextProvider } from './contexts/Authentication/GlobalContext';
 
 const App = () => (
    <Router>
-      <div className="App">
-         <Switch>
-            <Route exact path="/createadmin" component={Register} />
-            <Route path="/loginadmin" component={Login} />
-         </Switch>
-      </div>
+      <GlobalContextProvider>
+         <div className="App">
+            <Switch>
+               <Route exact path="/createadmin" component={Register} />
+               <Route exact path="/loginadmin" component={Login} />
+               <Route exact path="/admindashboard" component={Dashboard} />
+            </Switch>
+         </div>
+      </GlobalContextProvider>
    </Router>
 );
 

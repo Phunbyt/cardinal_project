@@ -2,18 +2,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   max-width: 500px;
    width: 100%;
-
+   background-color: #ffffff;
+   border-radius: .5em;
 }
 .createadmin {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   max-width: 500px;
-   width: 100%;
    margin: 1em auto;
    padding: 0 1em;
+   width: 100%;
 }
 
 .company_logo {

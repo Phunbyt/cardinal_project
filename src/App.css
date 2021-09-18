@@ -1,5 +1,13 @@
-.App{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.App {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-image: url('./assets/highrise.jpeg');
+   background-size: cover;
+   background-color: #0d2246e1;
+   background-blend-mode: overlay;
 }
+
+
