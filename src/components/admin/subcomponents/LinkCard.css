@@ -1,0 +1,43 @@
+.linkcard {
+   text-decoration: none;
+   margin: 1.2em;
+   border: 1px solid #ffffff;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   border-radius: 0.5em;
+}
+
+.card_box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+}
+
+.card_text_div {
+   width: 100%;
+}
+.card_icon {
+   display: flex;
+   height: max-content;
+   align-items: center;
+   justify-content: center;
+   flex: 1;
+}
+
+.card_img {
+   display: flex;
+   width: 30px;
+}
+
+.card_text {
+   word-wrap: break-word;
+   font-size: 0.7em;
+   text-align: center;
+   color: #ffffff;
+}
+
+img {
+   max-width: 100%;
+}

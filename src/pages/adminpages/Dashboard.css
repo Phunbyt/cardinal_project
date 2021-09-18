@@ -1,3 +1,32 @@
-.dashboard{
-   
+.dashboard {
+}
+
+.admin_form_header {
+   display: flex;
+   flex-direction: column;
+}
+
+.card_line {
+   display: none;
+}
+
+.admin_form_header .header_text {
+   color: #ffffff !important;
+}
+
+.admin_link_cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+}
+
+@media (min-width: 819px) {
+   .card_line {
+      display: block;
+      width: 1px;
+      height: 150px;
+      background-color: #fff;
+   }
 }
