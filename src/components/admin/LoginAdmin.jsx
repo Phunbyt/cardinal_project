@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import companyLogo from '../../assets/CSRLLogo1.png';
 import GlobalContext from '../../contexts/Authentication/GlobalContext';
 import BlueButton from '../general/BlueButton';
 import FormGroup from '../general/FormGroup';

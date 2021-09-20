@@ -1,6 +1,44 @@
 .dashboard {
 }
 
+.create {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 800px;
+   width: 100%;
+   background-color: #ffffff;
+   border-radius: 0.5em;
+}
+
+.unique_form_header {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: baseline;
+   position: relative;
+}
+
+.header_section_two{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 75px;
+}
+
+.unique_header_text {
+   color: #002564;
+   font-weight: 400;
+}
+
+.unique_register_form {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   width: 100%;
+   font-size: 0.5rem;
+}
+
 .admin_form_header {
    display: flex;
    flex-direction: column;
@@ -22,11 +60,21 @@
    width: 100%;
 }
 
-@media (min-width: 819px) {
+@media (min-width: 700px) {
    .card_line {
       display: block;
       width: 1px;
       height: 150px;
       background-color: #fff;
+   }
+
+   .unique_register_form {
+      flex-direction: row;
+   }
+   .unique_header_text{
+       font-size: 1.5em;
+   }
+   .form_section {
+      width: 48%;
    }
 }

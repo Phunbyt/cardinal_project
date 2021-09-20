@@ -2,8 +2,8 @@ import React from 'react';
 import './LinkCard.css';
 import { Link } from 'react-router-dom';
 
-const LinkCard = ({ cardIconSrc, cardLink, cardText }) => (
-   <Link className="linkcard" to={cardLink}>
+const LinkCard = ({ cardIconSrc, cardLink, cardText, onClick }) => (
+   <Link onClick={onClick} className="linkcard" to={cardLink}>
       <div className="card_box">
          <div className="card_icon">
             <div className="card_img">
