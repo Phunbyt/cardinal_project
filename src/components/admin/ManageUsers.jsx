@@ -1,8 +1,7 @@
 import React from 'react';
-import BlueTableHead from '../general/BlueTableHead';
-import TableData from '../general/TableData';
+import TableData from './subcomponents/TableData';
 import UniqueFormHeader from '../general/UniqueFormHeader';
-import UserTableItem from './subcomponents/UserTableItem';
+
 
 const ManageUsers = () => (
    <div className="manage_users">
