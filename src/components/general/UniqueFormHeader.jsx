@@ -2,7 +2,7 @@ import React from 'react'
 import companyLogo from '../../assets/CSRLLogo1.png';
 import headerFormIcon from '../../assets/XMLID_144_.png';
 
-const UniqueFormHeader = ({ formTitle }) => (
+const UniqueFormHeader = ({ formTitle, displayIcon=true }) => (
    <div className="unique_form_header">
       <div className="header_section_one">
          <div className="company_logo">
@@ -14,7 +14,7 @@ const UniqueFormHeader = ({ formTitle }) => (
       </div>
       <div className="header_section_two">
          <div className="header_form_icon">
-            <img src={headerFormIcon} alt="" srcSet="" />
+            {displayIcon && <img src={headerFormIcon} alt="" srcSet="" />}
          </div>
       </div>
    </div>

@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
             <LinkCard
                cardIconSrc={userIcon}
-               cardLink="/createadmin"
+               cardLink="/manageusers"
                cardText="Manage Users"
             />
 

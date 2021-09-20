@@ -1,0 +1,10 @@
+.manage_users {
+   width: 100%;
+   max-width: 750px;
+}
+
+.deactivate_btn{
+    border: none;
+    background: none;
+    color: #528DC2;
+}
