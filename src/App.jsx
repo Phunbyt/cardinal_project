@@ -12,6 +12,7 @@ import SuccessfulUser from './pages/adminpages/SuccessfulUser';
 import { SecretaryContextProvider } from './contexts/secretary/SecretaryContext';
 import ChangeSecretaryPassword from './pages/secretarypages/ChangeSecretaryPassword';
 import UserLogin from './pages/user/UserLogin';
+import PasswordChanged from './pages/secretarypages/PasswordChanged';
 
 const App = () => (
    <Router>
@@ -41,6 +42,11 @@ const App = () => (
                   exact
                   path="/changepassword"
                   component={ChangeSecretaryPassword}
+               />
+               <Route
+                  exact
+                  path="/passwordchanged"
+                  component={PasswordChanged}
                />
             </Switch>
          </SecretaryContextProvider>

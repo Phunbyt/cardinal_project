@@ -4,8 +4,11 @@ import passwordIcon from '../../assets/password.png';
 import FormHeader from '../general/FormHeader';
 
 import FormGroup from '../general/FormGroup';
+import SecretaryContext from '../../contexts/secretary/SecretaryContext';
 
-const ChangePassword = () => (
+const ChangePassword = () => {
+   const {handleChangedPassword} = useContext(SecretaryContext)
+   return (
    <div className="createadmin">
       <FormHeader boldText="COMPANY SECRETARY PORTAL" />
       <div className="success_icon">
@@ -36,9 +39,12 @@ const ChangePassword = () => (
             labelFor="password"
          />
 
-         <BlueButton buttonText="CHANGE PASSWORD" />
+         <BlueButton
+            click={handleChangedPassword}
+            buttonText="CHANGE PASSWORD"
+         />
       </form>
    </div>
-);
+)};
 
 export default ChangePassword;
