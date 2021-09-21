@@ -1,7 +1,10 @@
 import React, { createContext, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const UserCreationContext = createContext();
 export const UserCreationContextProvider = ({ children }) => {
+   const history = useHistory();
+
    const [userToCreate, setUserToCreate] = useState('');
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState([]);
@@ -13,8 +16,18 @@ export const UserCreationContextProvider = ({ children }) => {
       setUserToCreate(user);
    };
    const handleCreateUser = () => {
-      console.log('works');
+      history.push(`/successfuluser`);
+
    };
+
+   const goToDashboard = () => {
+      history.push(`/admindashboard`);
+   };
+   const createAnotherUser = () => {
+      setUserToCreate('user');
+      history.push(`/create`);
+   };
+
    const handleSelectionChange = (e) => {
       const {
          target: { value },
@@ -30,6 +43,8 @@ export const UserCreationContextProvider = ({ children }) => {
       handleClose,
       handleSelectionChange,
       selectedItem,
+      goToDashboard,
+      createAnotherUser,
    };
    return (
       <UserCreationContext.Provider value={state}>

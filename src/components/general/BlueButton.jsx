@@ -3,13 +3,20 @@ import Button from '@material-ui/core/Button';
 
 const backgroundColor =
    'linear-gradient(103.92deg, #002564 1.19%, #528DC2 100%)';
-const BlueButton = ({ buttonText, bgColor = backgroundColor }) => (
+   const color ='#ffffff'
+const BlueButton = ({
+   buttonText,
+   bgColor = backgroundColor,
+   textColor = color,
+   click,
+}) => (
    <Button
+      onClick={click}
       type="submit"
       variant="contained"
       style={{
          background: bgColor,
-         color: '#ffffff',
+         color: textColor,
          fontWeight: 800,
       }}
    >

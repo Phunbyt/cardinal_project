@@ -8,6 +8,7 @@ import { GlobalContextProvider } from './contexts/Authentication/GlobalContext';
 import { UserCreationContextProvider } from './contexts/Authentication/UserCreationContext';
 import Create from './pages/adminpages/Create';
 import Manage from './pages/adminpages/Manage';
+import SuccessfulUser from './pages/adminpages/SuccessfulUser';
 
 const App = () => (
    <Router>
@@ -20,6 +21,7 @@ const App = () => (
                   <Route exact path="/admindashboard" component={Dashboard} />
                   <Route exact path="/create" component={Create} />
                   <Route exact path="/manageusers" component={Manage} />
+                  <Route exact path="/successfuluser" component={SuccessfulUser} />
                </Switch>
             </div>
          </UserCreationContextProvider>
