@@ -5,7 +5,7 @@
    max-width: 500px;
    width: 100%;
    background-color: #ffffff;
-   border-radius: .5em;
+   border-radius: 0.5em;
 }
 .createadmin {
    display: flex;
@@ -49,4 +49,11 @@
 
 .form_group h2 {
    margin-bottom: -0.5em;
+}
+
+.MuiInputBase-root .MuiSelect-select {
+   padding: 9.5px 14px;
+}
+.dummydiv {
+   margin-bottom: 1em;
 }

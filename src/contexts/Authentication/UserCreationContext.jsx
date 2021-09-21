@@ -4,6 +4,8 @@ const UserCreationContext = createContext();
 export const UserCreationContextProvider = ({ children }) => {
    const [userToCreate, setUserToCreate] = useState('');
    const [open, setOpen] = useState(false);
+   const [selectedItem, setSelectedItem] = useState([]);
+
    const handleOpen = () => setOpen(true);
    const handleClose = () => setOpen(false);
 
@@ -13,6 +15,12 @@ export const UserCreationContextProvider = ({ children }) => {
    const handleCreateUser = () => {
       console.log('works');
    };
+   const handleSelectionChange = (e) => {
+      const {
+         target: { value },
+      } = e;
+      setSelectedItem(typeof value === 'string' ? value.split(',') : value);
+   };
    const state = {
       handleUserToCreate,
       handleCreateUser,
@@ -20,6 +28,8 @@ export const UserCreationContextProvider = ({ children }) => {
       open,
       handleOpen,
       handleClose,
+      handleSelectionChange,
+      selectedItem,
    };
    return (
       <UserCreationContext.Provider value={state}>
