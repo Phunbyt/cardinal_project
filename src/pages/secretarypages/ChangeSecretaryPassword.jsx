@@ -2,8 +2,10 @@ import React from 'react';
 import ChangePassword from '../../components/secretary/ChangePassword';
 
 const ChangeSecretaryPassword = () => (
-   <div className="register">
+   <div className="App">
+      <div className="register">
       <ChangePassword />
+   </div>
    </div>
 );
 

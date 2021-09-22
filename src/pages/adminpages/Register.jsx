@@ -6,8 +6,11 @@ import './Register.css';
 
 
 const Register = () => (
+   <div className="App">
    <div className="register">
+      
       <CreateAdmin />
+   </div>
    </div>
 );
 

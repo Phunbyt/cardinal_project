@@ -7,9 +7,12 @@ import './Register.css';
 const Create = () => {
    const { userToCreate } = useContext(UserCreationContext);
    return (
+      <div className="App">
+         
       <div className="create">
          {userToCreate === 'secretary' && <CreateSecretary /> }
          {userToCreate === 'user' &&  <CreateUser />}
+      </div>
       </div>
    );
 };

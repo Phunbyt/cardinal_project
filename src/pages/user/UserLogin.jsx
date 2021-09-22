@@ -2,8 +2,10 @@ import React from 'react';
 import Login from '../../components/user/Login';
 
 const UserLogin = () => (
-   <div className="register">
+   <div className="App">
+      <div className="register">
       <Login />
+   </div>
    </div>
 );
 
