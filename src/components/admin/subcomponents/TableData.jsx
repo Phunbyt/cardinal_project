@@ -2,10 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useMemo, useContext } from 'react';
 import { useTable } from 'react-table';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import Modal from '@material-ui/core/Modal';
-import Box from '@material-ui/core/Box';
+import { Button, Typography, Modal, Box } from '@mui/material';
 import UserCreationContext from '../../../contexts/Authentication/UserCreationContext';
 import BlueButton from '../../general/BlueButton';
 

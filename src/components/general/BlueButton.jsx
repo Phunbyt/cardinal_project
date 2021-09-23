@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { Button } from '@mui/material';
 
 const backgroundColor =
    'linear-gradient(103.92deg, #002564 1.19%, #528DC2 100%)';
