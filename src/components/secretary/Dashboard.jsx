@@ -46,6 +46,15 @@ const Dashboard = () => (
                bgColor="#002564"
             />
          </div>
+        </div>
+        
+      <div className="dashboard_requests">
+         <div className="dashboard_requests_header">
+            <h3>Recent Requests</h3>
+         </div>
+         <div className="dashboard_requests_cards">
+            
+         </div>
       </div>
    </div>
 );
