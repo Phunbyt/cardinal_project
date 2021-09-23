@@ -4,11 +4,11 @@ import CompanyCard from '../general/CompanyCard';
 import NumberCard from '../general/NumberCard';
 import RequestCard from './subcomponents/RequestCard';
 import blueAgmIcon from '../../assets/Groupblueagm.png';
-import callIcon from '../../assets/call.png';
-import emailIcon from '../../assets/email.png';
-import chatIcon from '../../assets/chat.png';
+import callIcon from '../../assets/callx.png';
+import emailIcon from '../../assets/emailx.png';
+import chatIcon from '../../assets/messagex.png';
 import blueEgmIcon from '../../assets/blueegm.png';
-import othersIcon from '../../assets/Groupothers.png';
+import othersIcon from '../../assets/otherswhite.png';
 import blueEmandateIcon from '../../assets/emandate.png';
 import blueEaccreditationIcon from '../../assets/XMLID_51_eaccre.png';
 
@@ -37,7 +37,7 @@ const Requests = () => (
                linkPath="/agmreport"
                linkText="AGM Notice"
                linkIcon={blueAgmIcon}
-               bgColor="#D8D8D8"
+               bgColor="#628395"
                subText="Annual General Meeting"
                fontColor="#3568A0"
             />
@@ -45,7 +45,7 @@ const Requests = () => (
                linkPath="/egmreport"
                linkText="EGM Notice"
                linkIcon={blueEgmIcon}
-               bgColor="#D8D8D8"
+               bgColor="#fbe6c9"
                subText="Extraordinary General Meeting"
                fontColor="#3568A0"
             />
@@ -60,14 +60,14 @@ const Requests = () => (
                linkPath="/emandate"
                linkText="E-mandate"
                linkIcon={blueEmandateIcon}
-               bgColor="#D8D8D8"
+               bgColor="#787A91"
                fontColor="#3568A0"
             />
             <RequestCard
                linkPath="/eaccreditation"
                linkText="E-accreditation and AGM"
                linkIcon={blueEaccreditationIcon}
-               bgColor="#D8D8D8"
+               bgColor="#787A91"
                fontColor="#3568A0"
             />
          </div>
@@ -81,8 +81,8 @@ const Requests = () => (
                linkPath="/emandate"
                linkText="Other Requests"
                linkIcon={othersIcon}
-               bgColor="#D8D8D8"
-               fontColor="#3568A0"
+               bgColor="#141E61"
+               fontColor="#ffffff"
             />
          </div>
       </div>

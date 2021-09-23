@@ -42,7 +42,6 @@ const RequestCard = ({
             <p
                style={{
                   fontSize: '.8rem',
-
                   width: '100%',
                   margin: '0em',
                   color: '#000',
