@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import EventAvailableSharpIcon from '@mui/icons-material/EventAvailableSharp';
 import AccessTimeSharpIcon from '@mui/icons-material/AccessTimeSharp';
 import NumberCard from '../general/NumberCard';
@@ -6,10 +6,13 @@ import CompanyCard from '../general/CompanyCard';
 import IconTextField from '../general/IconTextField';
 import TextArea from '../general/TextArea';
 import RelatedRequests from './subcomponents/RelatedRequests';
-
+import SecretaryContext from '../../contexts/secretary/SecretaryContext';
+import NotificationModal from './subcomponents/NotificationModal';
 import BlueButton from '../general/BlueButton';
 
-const EgmForm = () => (
+const EgmForm = () => {
+    const { handleOpen, handleSubmit } = useContext(SecretaryContext);
+    return (
    <div className="dashboard_view">
       <div className="dashboard_head">
          <div className="dashboard_header">
@@ -27,7 +30,7 @@ const EgmForm = () => (
             <div className="dashboard_requests_header request_form_content_header">
                <h3>Create EGM Notice</h3>
             </div>
-            <form>
+                    <form onSubmit={handleSubmit}>
                <div className="agm_time_date">
                   <IconTextField
                      headerText="Date of EGM"
@@ -59,7 +62,7 @@ const EgmForm = () => (
                </div>
 
                <div className="request_form_btn">
-                  <BlueButton buttonText="SUBMIT REQUEST" />
+                  <BlueButton  click={handleOpen} buttonText="SUBMIT REQUEST" />
                </div>
             </form>
          </div>
@@ -67,9 +70,11 @@ const EgmForm = () => (
             <div className="request_links">
                <RelatedRequests />
             </div>
-         </div>
+                </div>
+               <NotificationModal/>
+                
       </div>
    </div>
-);
+)};
 
 export default EgmForm;
