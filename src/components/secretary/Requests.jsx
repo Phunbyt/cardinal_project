@@ -1,5 +1,4 @@
 import React from 'react';
-import { CardHeader, Avatar } from '@mui/material';
 import CompanyCard from '../general/CompanyCard';
 import NumberCard from '../general/NumberCard';
 import RequestCard from './subcomponents/RequestCard';
@@ -76,7 +75,7 @@ const Requests = () => (
          </div>
          <div className="dashboard_requests_cards request_cards_shrink">
             <RequestCard
-               linkPath="/emandate"
+               linkPath="/otherrequests"
                linkText="Other Requests"
                linkIcon={othersIcon}
                bgColor="#141E61"
@@ -86,7 +85,7 @@ const Requests = () => (
       </div>
 
       <div className="requests_utilities">
-         <ChatCall/>
+         <ChatCall />
       </div>
    </div>
 );
