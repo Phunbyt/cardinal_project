@@ -1,0 +1,58 @@
+.marketchart {
+   width: 100%;
+   border: 1px solid #000000;
+   box-sizing: border-box;
+   border-radius: 5px;
+}
+
+.marketchart_headers,
+.marketchart_values {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.company_details {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.company_details_graph {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.company_details > h4 {
+   text-align: center;
+   width: 100%;
+}
+
+.company_details + .company_details {
+   margin-left: 0.6em;
+}
+
+.company_details_logo {
+   max-width: 50px;
+}
+
+.company_details_text,
+.company_details_price {
+   font-size: 0.5em;
+}
+
+.company_details_price {
+   text-align: center;
+   width: 100%;
+}
+
+.company_details_text,
+.company_details_logo {
+   width: 100%;
+}
+
+.company_details_text p,
+.company_details_text h1 {
+   margin: 0;
+}

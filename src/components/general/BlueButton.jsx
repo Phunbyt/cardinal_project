@@ -15,6 +15,7 @@ const BlueButton = ({
       type="submit"
       variant="contained"
       style={{
+         width: '100%',
          background: bgColor,
          color: textColor,
          fontWeight: 800,

@@ -1,0 +1,38 @@
+.feedbackform {
+   margin-top: 1.5em;
+}
+.feedbackform_header {
+   background: #4d4e53;
+   padding: 1em;
+   color: #fff;
+   border-radius: .5em .5em 0 0;
+}
+
+.feedbackform_header h4 {
+   margin: 0;
+   font-size: 0.7em;
+}
+
+.feedbackform_form {
+   padding: 1em 1.5em;
+   background: #f7f7f7;
+   width: 100%;
+}
+
+.form_group h2 {
+   margin-bottom: -0.5em;
+   font-size: 1rem;
+}
+
+.textarea_header {
+   font-weight: 400;
+   font-size: 1rem;
+}
+
+.MuiFormControl-root .MuiOutlinedInput-root {
+   background: #fff;
+}
+
+.button_div {
+   margin-top: 1.5em;
+}

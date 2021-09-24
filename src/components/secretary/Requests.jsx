@@ -11,6 +11,7 @@ import blueEgmIcon from '../../assets/blueegm.png';
 import othersIcon from '../../assets/otherswhite.png';
 import blueEmandateIcon from '../../assets/emandate.png';
 import blueEaccreditationIcon from '../../assets/XMLID_51_eaccre.png';
+import ChatCall from './subcomponents/ChatCall';
 
 const Requests = () => (
    <div className="dashboard_view">
@@ -88,9 +89,7 @@ const Requests = () => (
       </div>
 
       <div className="requests_utilities">
-         <CardHeader avatar={<Avatar src={callIcon} />} title="Call" />
-         <CardHeader avatar={<Avatar src={emailIcon} />} title="Send Mail" />
-         <CardHeader avatar={<Avatar src={chatIcon} />} title="Chat" />
+         <ChatCall/>
       </div>
    </div>
 );

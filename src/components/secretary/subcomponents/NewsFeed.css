@@ -1,0 +1,23 @@
+.newsfeed {
+   width: 100%;
+}
+
+.newsfeed_header {
+   background: #528dc2;
+   width: 100%;
+   padding: 1em;
+
+}
+.newsfeed_header h3{
+color: #fff;
+margin: 0;
+}
+.newscards {
+   background: #f7f7f7;
+   padding: 1em;
+}
+
+.newscard + .newscard{
+border-top: 1px solid #9FA2B4;
+padding-top: 1.5em;
+}
