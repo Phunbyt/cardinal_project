@@ -10,6 +10,7 @@ import Requests from '../../components/secretary/Requests';
 
 import './SecretaryDashboard.css';
 import EmandateForm from '../../components/secretary/EmandateForm';
+import EaccreditationForm from '../../components/secretary/EaccreditationForm';
 
 const SecretaryDashboard = () => (
    <div className="secretary_dashboard">
@@ -25,6 +26,10 @@ const SecretaryDashboard = () => (
                   <Route path="/egmreport" component={EgmForm} />
                   <Route path="/otherrequests" component={OtherRequests} />
                   <Route path="/emandate" component={EmandateForm} />
+                  <Route
+                     path="/eaccreditation"
+                     component={EaccreditationForm}
+                  />
                </Switch>
             </div>
          </div>
