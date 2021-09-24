@@ -6,9 +6,10 @@ import CompanyCard from '../general/CompanyCard';
 import IconTextField from '../general/IconTextField';
 import TextArea from '../general/TextArea';
 import RelatedRequests from './subcomponents/RelatedRequests';
+
 import BlueButton from '../general/BlueButton';
 
-const AgmForm = () => (
+const EgmForm = () => (
    <div className="dashboard_view">
       <div className="dashboard_head">
          <div className="dashboard_header">
@@ -24,12 +25,12 @@ const AgmForm = () => (
       <div className="request_form_content">
          <div className="request_form_content_form">
             <div className="dashboard_requests_header request_form_content_header">
-               <h3>Create AGM Notice</h3>
+               <h3>Create EGM Notice</h3>
             </div>
             <form>
                <div className="agm_time_date">
                   <IconTextField
-                     headerText="Date of AGM"
+                     headerText="Date of EGM"
                      fieldIcon={<EventAvailableSharpIcon />}
                      placeholder="Select Date"
                      labelFor="date"
@@ -71,4 +72,4 @@ const AgmForm = () => (
    </div>
 );
 
-export default AgmForm;
+export default EgmForm;

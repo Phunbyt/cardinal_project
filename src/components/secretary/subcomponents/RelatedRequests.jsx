@@ -11,7 +11,6 @@ const RelatedRequests = () => (
       <div className="related_requests_links">
          <RelatedLinks linkPath="agmreport" linkText="Notice of AGM" />
          <RelatedLinks linkPath="egmreport" linkText="Notice of EGM" />
-         <RelatedLinks linkPath="egmreport" linkText="Notice of EGM" />
          <RelatedLinks linkPath="vrsbroadcast" linkText="VRS Broadcast" />
          <RelatedLinks linkPath="emandate" linkText="E-mandate Broadcast" />
          <RelatedLinks

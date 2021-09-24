@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NameBar from '../../components/general/NameBar';
 import AgmForm from '../../components/secretary/AgmForm';
+import EgmForm from '../../components/secretary/EgmForm';
 import Dashboard from '../../components/secretary/Dashboard';
 import Navbar from '../../components/secretary/Navbar';
 import Requests from '../../components/secretary/Requests';
@@ -19,6 +20,7 @@ const SecretaryDashboard = () => (
                   <Route path="/secretarydashboard" component={Dashboard} />
                   <Route path="/requests" component={Requests} />
                   <Route path="/agmreport" component={AgmForm} />
+                  <Route path="/egmreport" component={EgmForm} />
                </Switch>
             </div>
          </div>
