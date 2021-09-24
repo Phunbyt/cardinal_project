@@ -9,6 +9,7 @@ import Navbar from '../../components/secretary/Navbar';
 import Requests from '../../components/secretary/Requests';
 
 import './SecretaryDashboard.css';
+import EmandateForm from '../../components/secretary/EmandateForm';
 
 const SecretaryDashboard = () => (
    <div className="secretary_dashboard">
@@ -23,6 +24,7 @@ const SecretaryDashboard = () => (
                   <Route path="/agmreport" component={AgmForm} />
                   <Route path="/egmreport" component={EgmForm} />
                   <Route path="/otherrequests" component={OtherRequests} />
+                  <Route path="/emandate" component={EmandateForm} />
                </Switch>
             </div>
          </div>
