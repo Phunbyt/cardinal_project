@@ -11,6 +11,7 @@ import Requests from '../../components/secretary/Requests';
 import './SecretaryDashboard.css';
 import EmandateForm from '../../components/secretary/EmandateForm';
 import EaccreditationForm from '../../components/secretary/EaccreditationForm';
+import TreatedRequests from '../../components/secretary/TreatedRequests';
 
 const SecretaryDashboard = () => (
    <div className="secretary_dashboard">
@@ -30,6 +31,7 @@ const SecretaryDashboard = () => (
                      path="/eaccreditation"
                      component={EaccreditationForm}
                   />
+                  <Route path="/treatedrequests" component={TreatedRequests} />
                </Switch>
             </div>
          </div>
