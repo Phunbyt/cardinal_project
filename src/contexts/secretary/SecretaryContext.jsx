@@ -5,6 +5,7 @@ const SecretaryContext = createContext();
 
 export const SecretaryContextProvider = ({ children }) => {
    const [open, setOpen] = useState(false);
+   const [selectedItem, setSelectedItem] = useState('');
 
    const history = useHistory();
 
@@ -23,7 +24,16 @@ const handleSubmit = async (e) => {
       history.push(`/passwordchanged`);
    };
 
+   const handleSelectionChange = (e) => {
+      const {
+         target: { value },
+      } = e;
+      setSelectedItem(typeof value === 'string' ? value.split(',') : value);
+   };
+
    const state = {
+      selectedItem,
+      handleSelectionChange,
       goToUserLogin,
       handleChangedPassword,
       handleOpen,

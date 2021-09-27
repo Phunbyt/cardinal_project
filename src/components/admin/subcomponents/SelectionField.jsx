@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { MenuItem, OutlinedInput, Select } from '@mui/material';
-import UserCreationContext from '../../contexts/Authentication/UserCreationContext';
+import UserCreationContext from '../../../contexts/Authentication/UserCreationContext';
 
 const SelectionField = ({ items, headerText }) => {
    const { handleSelectionChange, selectedItem } =

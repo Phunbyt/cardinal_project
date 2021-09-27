@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import UserCreationContext from '../../contexts/Authentication/UserCreationContext';
 import BlueButton from '../general/BlueButton';
 import FormGroup from '../general/FormGroup';
-import SelectionField from '../general/SelectionField';
 import UniqueFormHeader from '../general/UniqueFormHeader';
+import SelectionField from './subcomponents/SelectionField';
 
 const CreateUser = () => {
    const { handleCreateUser } = useContext(UserCreationContext);

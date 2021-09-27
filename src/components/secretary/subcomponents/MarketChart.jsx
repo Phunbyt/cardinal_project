@@ -28,7 +28,7 @@ const MarketChart = ({ companyName, subText, change, subChange, price }) => (
             <div className="company_details">
                <div className="company_details_logo">
                   <img
-                     src="https://lh3.googleusercontent.com/proxy/THEqQTg1U9sD4o8Dnxwjv4PRQ0rAQUP01aV3iKkGeYWsAPa_y-CTm-J6K5d_4YGnwcISrihuvxV7Rc9HgdbwiD0FT9nGzNqblClpRtocaDVq0p5ji9I7EbBgw88"
+                     src="http://www.clipartbest.com/cliparts/pi5/XqG/pi5XqG47T.jpg"
                      alt="company_details_logo"
                   />
                </div>
