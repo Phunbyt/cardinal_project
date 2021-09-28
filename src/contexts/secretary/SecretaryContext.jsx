@@ -4,18 +4,22 @@ import { useHistory } from 'react-router-dom';
 const SecretaryContext = createContext();
 
 export const SecretaryContextProvider = ({ children }) => {
+   const history = useHistory();
+
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState('');
 
-   const history = useHistory();
+
+
+   
 
    const handleOpen = () => setOpen(true);
 
    const handleClose = () => setOpen(false);
 
-const handleSubmit = async (e) => {
-   e.preventDefault();
-};
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+   };
    const goToUserLogin = () => {
       history.push(`/loginuser`);
    };

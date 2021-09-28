@@ -12,14 +12,30 @@ import cardinalLogo from '../../assets/CSRLLogo1.png';
 
 const navItems = [
    {
-      linkPath: '/secretarydashboard',
+      linkPath: '/secretarydashboard/a',
       linkIcon: dashboardIcon,
       linkText: 'Dashboard',
    },
-   { linkPath: '/requests', linkIcon: requestsIcon, linkText: 'Requests' },
-   { linkPath: '/invoices', linkIcon: billsIcon, linkText: 'Bills/Invoices' },
-   { linkPath: '/reports', linkIcon: reportsIcon, linkText: 'Reports' },
-   { linkPath: '/payment', linkIcon: paymentIcon, linkText: 'Payment' },
+   {
+      linkPath: '/secretarydashboard/requests',
+      linkIcon: requestsIcon,
+      linkText: 'Requests',
+   },
+   {
+      linkPath: '/secretarydashboard/invoices',
+      linkIcon: billsIcon,
+      linkText: 'Bills/Invoices',
+   },
+   {
+      linkPath: '/secretarydashboard/reports',
+      linkIcon: reportsIcon,
+      linkText: 'Reports',
+   },
+   {
+      linkPath: '/secretarydashboard/payment',
+      linkIcon: paymentIcon,
+      linkText: 'Payment',
+   },
 ];
 
 const Navbar = () => (

@@ -6,15 +6,20 @@ import { NavLink } from 'react-router-dom';
 import NumberCard from '../general/NumberCard';
 import CompanyCard from '../general/CompanyCard';
 import BlueButton from '../general/BlueButton';
-import IconTextField from '../general/IconTextField';
 import SearchBar from './subcomponents/SearchBar';
 
+
+
 const Invoices = () => {
+   
+
    const checkPaid = (status) =>
       status ? (
          <h3>Paid</h3>
       ) : (
-         <BlueButton buttonText="PAY NOW > >" bgColor="#528DC2" />
+         <NavLink to="unpaidinvoice">
+            <BlueButton buttonText="PAY NOW > >" bgColor="#528DC2" />
+         </NavLink>
       );
    const viewBill = (status) =>
       status ? (
@@ -130,10 +135,10 @@ const Invoices = () => {
          <div className="dashboard_requests_header ">
             <h3 style={{ fontSize: '2rem' }}>Bills / Invoices</h3>
          </div>
-           <div className="search_options">
-               <SearchBar/>
-</div>
-           
+         <div className="search_options">
+            <SearchBar />
+         </div>
+
          <div style={{ marginTop: '2em' }} className="table">
             <table
                cellSpacing={0}
@@ -162,6 +167,7 @@ const Invoices = () => {
                                  textAlign: 'left',
                               }}
                            >
+                              {/* {true ? 'Paid': <Link} */}
                               {column.render('Header')}
                            </th>
                         ))}

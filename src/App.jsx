@@ -50,7 +50,6 @@ const App = () => (
                   component={PasswordChanged}
                />
                <Route
-                  exact
                   path="/secretarydashboard"
                   component={SecretaryDashboard}
                />

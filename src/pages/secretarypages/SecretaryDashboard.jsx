@@ -13,6 +13,7 @@ import EmandateForm from '../../components/secretary/EmandateForm';
 import EaccreditationForm from '../../components/secretary/EaccreditationForm';
 import TreatedRequests from '../../components/secretary/TreatedRequests';
 import Invoices from '../../components/secretary/Invoices';
+import UnpaidInvoice from '../../components/secretary/UnpaidInvoice';
 
 const SecretaryDashboard = () => (
    <div className="secretary_dashboard">
@@ -22,18 +23,47 @@ const SecretaryDashboard = () => (
             <NameBar title="John Doe" />
             <div className="dashboard_view">
                <Switch>
-                  <Route path="/secretarydashboard" component={Dashboard} />
-                  <Route path="/requests" component={Requests} />
-                  <Route path="/agmreport" component={AgmForm} />
-                  <Route path="/egmreport" component={EgmForm} />
-                  <Route path="/otherrequests" component={OtherRequests} />
-                  <Route path="/emandate" component={EmandateForm} />
                   <Route
-                     path="/eaccreditation"
+                     exact
+                     path="/secretarydashboard/a"
+                     component={Dashboard}
+                  />
+                  <Route
+                     path="/secretarydashboard/requests"
+                     component={Requests}
+                  />
+                  <Route
+                     path="/secretarydashboard/agmreport"
+                     component={AgmForm}
+                  />
+                  <Route
+                     path="/secretarydashboard/egmreport"
+                     component={EgmForm}
+                  />
+                  <Route
+                     path="/secretarydashboard/otherrequests"
+                     component={OtherRequests}
+                  />
+                  <Route
+                     path="/secretarydashboard/emandate"
+                     component={EmandateForm}
+                  />
+                  <Route
+                     path="/secretarydashboard/eaccreditation"
                      component={EaccreditationForm}
                   />
-                  <Route path="/treatedrequests" component={TreatedRequests} />
-                  <Route path="/invoices" component={Invoices} />
+                  <Route
+                     path="/secretarydashboard/treatedrequests"
+                     component={TreatedRequests}
+                  />
+                  <Route
+                     path="/secretarydashboard/invoices"
+                     component={Invoices}
+                  />
+                  <Route
+                     path="/secretarydashboard/unpaidinvoice"
+                     component={UnpaidInvoice}
+                  />
                </Switch>
             </div>
          </div>
