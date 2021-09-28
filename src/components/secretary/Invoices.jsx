@@ -8,22 +8,18 @@ import CompanyCard from '../general/CompanyCard';
 import BlueButton from '../general/BlueButton';
 import SearchBar from './subcomponents/SearchBar';
 
-
-
 const Invoices = () => {
-   
-
    const checkPaid = (status) =>
       status ? (
          <h3>Paid</h3>
       ) : (
-         <NavLink to="unpaidinvoice">
+         <NavLink style={{ textDecoration: 'none' }} to="unpaidinvoice">
             <BlueButton buttonText="PAY NOW > >" bgColor="#528DC2" />
          </NavLink>
       );
    const viewBill = (status) =>
       status ? (
-         <NavLink style={{ color: '#528DC2' }} to="#">
+         <NavLink style={{ color: '#528DC2' }} to="paidinvoice">
             View/Download
          </NavLink>
       ) : (
