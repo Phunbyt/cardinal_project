@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 import BlueButton from '../general/BlueButton';
-
 import CompanyCard from '../general/CompanyCard';
 import ServiceInfo from './subcomponents/ServiceInfo';
 
@@ -106,7 +106,9 @@ const UnpaidInvoice = () => (
          </div>
 
          <div className="download_or_pay_btn">
-            <BlueButton buttonText="PAY NOW" />
+            <NavLink to="makepayment" style={{textDecoration: 'none'}}>
+               <BlueButton buttonText="PAY NOW" />
+            </NavLink>
          </div>
       </div>
    </div>
