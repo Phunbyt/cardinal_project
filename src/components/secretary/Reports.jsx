@@ -8,7 +8,7 @@ import TextArea from "../general/TextArea";
 import OtherReports from "./subcomponents/OtherReports";
 import BlueButton from "../general/BlueButton";
 import SecretaryContext from "../../contexts/secretary/SecretaryContext";
-import NotificationModal from "./subcomponents/NotificationModal";
+import ReportError from "./subcomponents/ReportError";
 import SelectionField from "./subcomponents/SelectionField";
 
 const Reports = () => {
@@ -74,7 +74,7 @@ const Reports = () => {
                   <OtherReports />
                </div>
             </div>
-            <NotificationModal />
+            <ReportError />
          </div>
       </div>
    );
