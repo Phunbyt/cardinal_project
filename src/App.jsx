@@ -16,6 +16,8 @@ import PasswordChanged from './pages/secretarypages/PasswordChanged';
 import SecretaryDashboard from './pages/secretarypages/SecretaryDashboard';
 import { FinconContextProvider } from './contexts/fincon/FinconContext';
 import FinconDashboard from './pages/finconpages/FinconDashboard';
+import BduDashboard from './pages/bdupages/BduDashboard';
+import { BduContextProvider } from './contexts/bdu/BduContext';
 
 const App = () => (
    <Router>
@@ -60,6 +62,9 @@ const App = () => (
          <FinconContextProvider>
             <Route path="/fincondashboard" component={FinconDashboard} />
          </FinconContextProvider>
+         <BduContextProvider>
+            <Route path="/bdudashboard" component={BduDashboard} />
+         </BduContextProvider>
       </div>
    </Router>
 );

@@ -1,0 +1,16 @@
+/* fincon_dashboard_header */
+
+@media (min-width: 700px) {
+.fincon_dashboard_header {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+   }
+
+.view_all_invoice{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5em;
+}
+
+}
