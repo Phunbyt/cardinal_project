@@ -18,6 +18,8 @@ import { FinconContextProvider } from './contexts/fincon/FinconContext';
 import FinconDashboard from './pages/finconpages/FinconDashboard';
 import BduDashboard from './pages/bdupages/BduDashboard';
 import { BduContextProvider } from './contexts/bdu/BduContext';
+import OperationsDashboard from './pages/operationspages/OperationsDashboard';
+import { OperationsContextProvider } from './contexts/operations/OperationsContext';
 
 const App = () => (
    <Router>
@@ -65,6 +67,12 @@ const App = () => (
          <BduContextProvider>
             <Route path="/bdudashboard" component={BduDashboard} />
          </BduContextProvider>
+         <OperationsContextProvider>
+            <Route
+               path="/operationsdashboard"
+               component={OperationsDashboard}
+            />
+         </OperationsContextProvider>
       </div>
    </Router>
 );

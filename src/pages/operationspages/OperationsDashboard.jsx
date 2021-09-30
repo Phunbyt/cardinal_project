@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Dashboard from "../../components/bdu/Dashboard";
-import Navbar from "../../components/bdu/Navbar";
+import Dashboard from "../../components/operations/Dashboard";
+import Navbar from "../../components/operations/Navbar";
 import NameBar from "../../components/general/NameBar";
-import "./BduDashboard.css";
+import "./OperationsDashboard.css";
 
-const BduDashboard = () => (
+const OperationsDashboard = () => (
    <div className="secretary_dashboard">
       <Router>
          <Navbar />
@@ -15,7 +15,7 @@ const BduDashboard = () => (
                <Switch>
                   <Route
                      exact
-                     path="/bdudashboard/a"
+                     path="/operationsdashboard/a"
                      component={Dashboard}
                   />
                </Switch>
@@ -25,4 +25,4 @@ const BduDashboard = () => (
    </div>
 );
 
-export default BduDashboard;
+export default OperationsDashboard;
