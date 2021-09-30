@@ -14,6 +14,8 @@ import ChangeSecretaryPassword from './pages/secretarypages/ChangeSecretaryPassw
 import UserLogin from './pages/user/UserLogin';
 import PasswordChanged from './pages/secretarypages/PasswordChanged';
 import SecretaryDashboard from './pages/secretarypages/SecretaryDashboard';
+import { FinconContextProvider } from './contexts/fincon/FinconContext';
+import FinconDashboard from './pages/finconpages/FinconDashboard';
 
 const App = () => (
    <Router>
@@ -55,6 +57,9 @@ const App = () => (
                />
             </Switch>
          </SecretaryContextProvider>
+         <FinconContextProvider>
+            <Route path="/fincondashboard" component={FinconDashboard} />
+         </FinconContextProvider>
       </div>
    </Router>
 );
