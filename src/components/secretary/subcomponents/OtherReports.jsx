@@ -22,8 +22,12 @@ const OtherReports = () => (
       </div>
 
       <div className="related_requests_links">
-         {reports.map((report) => (
-            <RelatedLinks linkPath={report.linkPath} linkText={report.linkText} />
+         {reports.map((report, index) => (
+            <RelatedLinks
+               key={index}
+               linkPath={report.linkPath}
+               linkText={report.linkText}
+            />
          ))}
       </div>
    </div>

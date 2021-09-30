@@ -35,7 +35,7 @@ const TableData = () => {
          return (
             <p style={{ margin: 0, color: "#B92121" }}>Awaiting Confirmation</p>
          );
-      if (status === "not paid") return <p style={{ margin: 0 }}>Not Paid</p>;
+return <p style={{ margin: 0 }}>Not Paid</p>;
    };
 
    const data = useMemo(

@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
 import EventAvailableSharpIcon from "@mui/icons-material/EventAvailableSharp";
-import AccessTimeSharpIcon from "@mui/icons-material/AccessTimeSharp";
 import NumberCard from "../general/NumberCard";
 import CompanyCard from "../general/CompanyCard";
 import IconTextField from "../general/IconTextField";
-import TextArea from "../general/TextArea";
 import OtherReports from "./subcomponents/OtherReports";
 import BlueButton from "../general/BlueButton";
 import SecretaryContext from "../../contexts/secretary/SecretaryContext";
