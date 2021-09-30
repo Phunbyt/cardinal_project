@@ -4,6 +4,7 @@ import Dashboard from "../../components/operations/Dashboard";
 import Navbar from "../../components/operations/Navbar";
 import NameBar from "../../components/general/NameBar";
 import "./OperationsDashboard.css";
+import PastAgm from "../../components/operations/PastAgm";
 
 const OperationsDashboard = () => (
    <div className="secretary_dashboard">
@@ -17,6 +18,11 @@ const OperationsDashboard = () => (
                      exact
                      path="/operationsdashboard/a"
                      component={Dashboard}
+                  />
+                  <Route
+                     exact
+                     path="/operationsdashboard/requests"
+                     component={PastAgm}
                   />
                </Switch>
             </div>

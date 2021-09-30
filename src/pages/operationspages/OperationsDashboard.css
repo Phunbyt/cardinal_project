@@ -22,4 +22,13 @@
     margin: 0;
 }
 
+.past_agm_company_info{
+    max-width: 600px;
+}
+
+.submit_agm_report_request_btn{
+    max-width: 300px;
+}
+
+
 }

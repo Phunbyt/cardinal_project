@@ -1,0 +1,22 @@
+.company_request_info {
+   border: 1px solid #528DC2;
+   max-width: 400px;
+   padding: 2em;
+   background: #f4f4f5;
+}
+
+.company_request_info_item {
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+}
+.company_request_info_item span {
+   flex: 1;
+}
+.company_request_info_item + .company_request_info_item {
+   margin-top: 1.5em;
+}
+
+.company_request_info_values {
+   text-align: left;
+}
