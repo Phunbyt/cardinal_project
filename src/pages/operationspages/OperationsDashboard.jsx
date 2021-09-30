@@ -5,6 +5,7 @@ import Navbar from "../../components/operations/Navbar";
 import NameBar from "../../components/general/NameBar";
 import "./OperationsDashboard.css";
 import PastAgm from "../../components/operations/PastAgm";
+import RequestFeedback from "../../components/operations/RequestFeedback";
 
 const OperationsDashboard = () => (
    <div className="secretary_dashboard">
@@ -23,6 +24,11 @@ const OperationsDashboard = () => (
                      exact
                      path="/operationsdashboard/requests"
                      component={PastAgm}
+                  />
+                  <Route
+                     exact
+                     path="/operationsdashboard/requestfeedback"
+                     component={RequestFeedback}
                   />
                </Switch>
             </div>
