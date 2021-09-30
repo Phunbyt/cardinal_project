@@ -1,15 +1,19 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useMemo } from 'react';
+import { NavLink } from "react-router-dom";
 import { useTable } from 'react-table';
 
 import NumberCard from '../general/NumberCard';
 import CompanyCard from '../general/CompanyCard';
 import BlueButton from '../general/BlueButton';
 
+
 const TreatedRequests = () => {
    const deactivateBtn = (
-      <BlueButton buttonText="VIEW / DOWNLOAD" bgColor="#528DC2" />
+      <NavLink style={{textDecoration: 'none'}} to="downloadreports">
+         <BlueButton buttonText="VIEW / DOWNLOAD" bgColor="#528DC2" />
+      </NavLink>
    );
    const data = useMemo(
       () => [

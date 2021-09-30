@@ -17,6 +17,7 @@ import UnpaidInvoice from '../../components/secretary/UnpaidInvoice';
 import PaidInvoice from '../../components/secretary/PaidInvoice';
 import MakePayment from '../../components/secretary/MakePayment';
 import Reports from '../../components/secretary/Reports';
+import DownloadRequest from '../../components/secretary/DownloadRequest';
 
 const SecretaryDashboard = () => (
    <div className="secretary_dashboard">
@@ -78,6 +79,10 @@ const SecretaryDashboard = () => (
                   <Route
                      path="/secretarydashboard/reports"
                      component={Reports}
+                  />
+                  <Route
+                     path="/secretarydashboard/downloadreports"
+                     component={DownloadRequest}
                   />
                </Switch>
             </div>
