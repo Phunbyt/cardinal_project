@@ -13,4 +13,10 @@
     margin-top: 1.5em;
 }
 
+.assign_request_div{
+    display: flex;
+width: 100%;
+max-width: 500px;
+}
+
 }

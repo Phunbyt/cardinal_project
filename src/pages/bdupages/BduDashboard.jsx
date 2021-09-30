@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AssignRequest from "../../components/bdu/AssignRequest";
 import Dashboard from "../../components/bdu/Dashboard";
 import Navbar from "../../components/bdu/Navbar";
 import NameBar from "../../components/general/NameBar";
@@ -13,10 +14,11 @@ const BduDashboard = () => (
             <NameBar title="John Doe" />
             <div className="dashboard_view">
                <Switch>
+                  <Route exact path="/bdudashboard/a" component={Dashboard} />
                   <Route
                      exact
-                     path="/bdudashboard/a"
-                     component={Dashboard}
+                     path="/bdudashboard/assignrequest"
+                     component={AssignRequest}
                   />
                </Switch>
             </div>
