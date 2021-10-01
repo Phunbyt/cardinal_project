@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { pdfjs } from "react-pdf";
 
 const SecretaryContext = createContext();
 
@@ -9,7 +10,29 @@ export const SecretaryContextProvider = ({ children }) => {
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState('');
 
+const [numPages, setNumPages] = useState(null);
+const [pageNumber, setPageNumber] = useState(1);
+const url =
+   "https://cors-anywhere.herokuapp.com/http://www.pdf995.com/samples/pdf.pdf";
 
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+const onDocumentLoadSuccess = ({ numPage }) => {
+   setNumPages(numPage);
+   setPageNumber(1);
+};
+
+const changePage = (offset) => {
+   setPageNumber((prevPageNumber) => prevPageNumber + offset);
+};
+
+const previousPage = () => {
+   changePage(-1);
+};
+
+const nextPage = () => {
+   changePage(1);
+};
 
    
 
@@ -44,6 +67,11 @@ export const SecretaryContextProvider = ({ children }) => {
       open,
       handleClose,
       handleSubmit,
+      previousPage,
+      nextPage,
+      url,
+      onDocumentLoadSuccess,
+      pageNumber,
    };
    return (
       <SecretaryContext.Provider value={state}>
