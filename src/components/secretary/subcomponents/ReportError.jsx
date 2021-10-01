@@ -6,12 +6,12 @@ import "./NotificationModal.css";
 import errorIcon from "../../../assets/file-error.png";
 
 const ReportError = () => {
-   const { open, handleClose } = useContext(SecretaryContext);
+   const { modalError, handleClose } = useContext(SecretaryContext);
 
    return (
       <div>
          <Modal
-            open={open}
+            open={modalError}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
@@ -50,6 +50,7 @@ const ReportError = () => {
                   />
                   <div className="dummydiv" />
                   <BlueButton
+                     click={handleClose}
                      buttonText="CANCEL"
                      bgColor="#ffffff"
                      textColor="#002564"

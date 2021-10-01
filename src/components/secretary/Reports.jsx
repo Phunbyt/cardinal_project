@@ -8,10 +8,13 @@ import BlueButton from "../general/BlueButton";
 import SecretaryContext from "../../contexts/secretary/SecretaryContext";
 import ReportError from "./subcomponents/ReportError";
 import SelectionField from "./subcomponents/SelectionField";
+import DocumentModal from "./subcomponents/DocumentModal";
 
 const Reports = () => {
-   const { handleOpen, handleSubmit } = useContext(SecretaryContext);
+   const {  handleSubmit, handleError } =
+      useContext(SecretaryContext);
 
+   
    return (
       <div className="dashboard_view">
          <div className="dashboard_head">
@@ -61,7 +64,7 @@ const Reports = () => {
 
                   <div className="request_form_btn">
                      <BlueButton
-                        click={handleOpen}
+                        click={()=>handleError(false)}
                         buttonText="VIEW / DOWNLOAD"
                      />
                   </div>
@@ -73,6 +76,7 @@ const Reports = () => {
                </div>
             </div>
             <ReportError />
+            <DocumentModal/>
          </div>
       </div>
    );
