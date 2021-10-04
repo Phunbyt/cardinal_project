@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Modal, Box } from "@mui/material";
 import Carousel from "react-material-ui-carousel";
 import { Document, Page } from "react-pdf";

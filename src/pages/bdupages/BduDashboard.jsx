@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AssignRequest from "../../components/bdu/AssignRequest";
 import Dashboard from "../../components/bdu/Dashboard";
 import Navbar from "../../components/bdu/Navbar";
+import ViewInvoices from "../../components/bdu/ViewInvoices";
 import NameBar from "../../components/general/NameBar";
 import "./BduDashboard.css";
 
@@ -19,6 +20,11 @@ const BduDashboard = () => (
                      exact
                      path="/bdudashboard/assignrequest"
                      component={AssignRequest}
+                  />
+                  <Route
+                     exact
+                     path="/bdudashboard/viewinvoices"
+                     component={ViewInvoices}
                   />
                </Switch>
             </div>
