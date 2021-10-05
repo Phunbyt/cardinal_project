@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import ViewInvoicesData from "./subcomponents/ViewInvoices";
 import NumberCard from "../general/NumberCard";
+import InvoiceCard from "./subcomponents/InvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
+import BlueButton from "../general/BlueButton";
 
-const ViewInvoices = () => (
+const ConfirmedInvoice = () => (
    <div className="dashboard_view">
       <div className="dashboard_head">
          <div className="fincon_dashboard_header">
@@ -18,15 +19,18 @@ const ViewInvoices = () => (
             <SearchBar />
          </div>
       </div>
-      <div className="dashboard_requests">
-         <ViewInvoicesData />
-      </div>
       <div className="view_all_invoice">
-         <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
-            <p style={{ margin: 0 }}>View all invoices</p>
+         <NavLink to="editunconfirmedinvoice">
+            <p style={{ margin: 0 }}>Edit this invoice</p>
          </NavLink>
+      </div>
+      <div className="dashboard_requests">
+         <InvoiceCard />
+         <div style={{ margin: '1em', maxWidth: '300px'}}>
+            <BlueButton buttonText="SEND TO SECRETARY" />
+         </div>
       </div>
    </div>
 );
 
-export default ViewInvoices;
+export default ConfirmedInvoice;

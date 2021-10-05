@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AssignRequest from "../../components/bdu/AssignRequest";
+import ConfirmedInvoice from "../../components/bdu/ConfirmedInvoice";
 import Dashboard from "../../components/bdu/Dashboard";
 import Navbar from "../../components/bdu/Navbar";
 import ViewInvoices from "../../components/bdu/ViewInvoices";
@@ -25,6 +26,11 @@ const BduDashboard = () => (
                      exact
                      path="/bdudashboard/viewinvoices"
                      component={ViewInvoices}
+                  />
+                  <Route
+                     exact
+                     path="/bdudashboard/confirmedinvoice"
+                     component={ConfirmedInvoice}
                   />
                </Switch>
             </div>

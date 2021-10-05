@@ -10,7 +10,10 @@ const TableData = () => {
          return (
             <div>
                <p style={{ margin: 0 }}>Completed</p>
-               <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+               <NavLink
+                  style={{ textDecoration: "none" }}
+                  to="confirmedinvoice"
+               >
                   <p style={{ margin: 0 }}>View</p>
                </NavLink>
             </div>
