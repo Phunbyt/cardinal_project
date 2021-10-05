@@ -16,15 +16,15 @@ const ViewInvoicesData = () => {
                </div>
            );
 return (
-            <div>
-               <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
-                  <p style={{ margin: 0 }}>Edit Invoice</p>
-               </NavLink>
-               <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
-                  <p style={{ margin: 0 }}>View</p>
-               </NavLink>
-            </div>
-         );
+   <div>
+      <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+         <p style={{ margin: 0 }}>Edit Invoice</p>
+      </NavLink>
+      <NavLink style={{ textDecoration: "none" }} to="unconfirmedinvoice">
+         <p style={{ margin: 0 }}>View</p>
+      </NavLink>
+   </div>
+);
 
    };
    const statusColor = (status) => {

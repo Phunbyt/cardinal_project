@@ -23,7 +23,7 @@ const TableData = () => {
             <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
                <p style={{ margin: 0 }}>Edit Invoice</p>
             </NavLink>
-            <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+            <NavLink style={{ textDecoration: "none" }} to="unconfirmedinvoice">
                <p style={{ margin: 0 }}>View</p>
             </NavLink>
          </div>
