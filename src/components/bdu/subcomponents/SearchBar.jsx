@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { IconButton, Button, TextField } from "@mui/material";
 import "./SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
@@ -74,7 +75,13 @@ const SearchBar = () => (
             </Button>
 
             <div className="bdu_add_btn">
+               <NavLink
+                  style={{ textDecoration: "none" }}
+                  to="addnewinvoice"
+               >
+                  
                <BlueButton buttonText="+ NEW" />
+               </NavLink>
             </div>
          </div>
       </div>
