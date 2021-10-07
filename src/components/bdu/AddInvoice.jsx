@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import NewInvoiceCard from "./subcomponents/NewInvoiceCard";
 import BlueButton from "../general/BlueButton";
 
@@ -11,12 +10,10 @@ const AddInvoice = () => (
          </div>
       </div>
 
-      
-      
       <div className="dashboard_requests">
          <NewInvoiceCard />
          <div style={{ margin: "1em", maxWidth: "300px" }}>
-            <BlueButton buttonText="SEND TO FINCON" />
+            <BlueButton buttonText="CONFIRM" />
          </div>
       </div>
    </div>

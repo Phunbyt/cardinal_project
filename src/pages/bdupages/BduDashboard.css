@@ -1,6 +1,12 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
 @media (min-width: 700px) {
    .bdu_dashboard_requests {
-       margin-top: 1.5em;
+      margin-top: 1.5em;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -17,7 +23,7 @@
       max-width: 500px;
    }
 
-.search_selection_field_item,
+   .search_selection_field_item,
    .search_and_add_btns,
    .search_filter_btn,
    .search_selection_fields {
@@ -26,8 +32,8 @@
       justify-content: space-between;
    }
 
-   .search_selection_field_item{
-       max-width: 210px;
+   .search_selection_field_item {
+      max-width: 210px;
    }
 
    .search_filter_btn {
@@ -41,5 +47,21 @@
       flex: 3;
       margin-left: 1.5em;
       align-items: center;
+   }
+
+   .invoice_service_add_btn {
+      max-width: 100px;
+   }
+
+   .subject_and_date {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2em;
+      margin-top: 1.5em;
+   }
+
+   .select_due_date .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+      padding: 0 2em;
+      background: red !important;
    }
 }

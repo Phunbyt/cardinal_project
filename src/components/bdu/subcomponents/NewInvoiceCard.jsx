@@ -1,80 +1,110 @@
-import React from "react";
+import React, { useContext } from "react";
 import ServiceInfo from "./ServiceInfo";
+import NewServiceInfo from "./NewServiceInfo";
+import BduContext from "../../../contexts/bdu/BduContext";
+import BlueButton from "../../general/BlueButton";
+import SelectionField from "./SelectionField";
+import BduDatePicker from "./BduDatePicker";
 
-const services = [
-   { serviceType: "Share Capital History", serviceCharge: "3,000.00" },
-   { serviceType: "Current Market Trend", serviceCharge: "5,000.00" },
-   { serviceType: "Monthly Report", serviceCharge: "13,000.00" },
-];
-const NewInvoiceCard = () => (
-   <form>
-      <div className="unpaidinvoice_card">
-         <div className="unpaidinvoice_card_header">
-            <p>Bill/Invoice</p>
-         </div>
-         <div className="unpaidinvoice_card_subject">
-            <div className="unpaidinvoice_card_company">
-               <p>
-                  <span>COMPANY</span>:{" "}
-                  <span className="unpaidinvoice_card_subject_info">
-                     <input type="text" />
-                  </span>
-               </p>
+const NewInvoiceCard = () => {
+   const { addInvoiceServices, invoiceServices } = useContext(BduContext);
+   return (
+         <div className="unpaidinvoice_card">
+            <div className="unpaidinvoice_card_header">
+               <p>Bill/Invoice</p>
             </div>
-            <div className="unpaidinvoice_card_invoice">
-               <p>
-                  <span>Invoice</span>:{" "}
-                  <span className="unpaidinvoice_card_subject_info">
-                     213498
-                  </span>
-               </p>
-               <p>
-                  <span>Date</span>:{" "}
-                  <span className="unpaidinvoice_card_subject_info">
-                     12/8/2020
-                  </span>
-               </p>
-               
+            <div className="unpaidinvoice_card_subject">
+               <div className="unpaidinvoice_card_company">
+                  <p>
+                     <span>COMPANY</span>:{" "}
+                     <span className="unpaidinvoice_card_subject_info">
+                        <input type="text" />
+                     </span>
+                  </p>
+               </div>
+               <div className="unpaidinvoice_card_invoice">
+                  <p>
+                     <span>Invoice</span>:{" "}
+                     <span className="unpaidinvoice_card_subject_info">
+                        213498
+                     </span>
+                  </p>
+                  <p>
+                     <span>Date</span>:{" "}
+                     <span className="unpaidinvoice_card_subject_info">
+                        12/8/2020
+                     </span>
+                  </p>
+               </div>
             </div>
-         </div>
 
-         <div className="unpaidinvoice_card_banner">
-            <h3>INVOICE DETAILS</h3>
-         </div>
-
-         <div className="unpaidinvoice_card_details">
-            <div className="unpaidinvoice_card_details_header">
-               <h3>Service Type</h3>
-               <h3>Service Charge</h3>
+            <div className="unpaidinvoice_card_banner">
+               <h3>INVOICE DETAILS</h3>
             </div>
-            <div className="unpaidinvoice_card_details_content">
-               {services.map((service, index) => (
+
+            <div className="unpaidinvoice_card_details">
+               <div className="subject_and_date">
+                  <div className="select_subject">
+                     <p>Select Subject</p>
+                     <SelectionField
+                        placeholder="None selected"
+                        background="#ffffff"
+                        items={[
+                           "AGM",
+                           "Monthly Report",
+                           "Share Capital History",
+                        ]}
+                     />
+                  </div>
+                  <div className="select_date">
+                     <p style={{ margin: 0}}>Due Date</p>
+                     <BduDatePicker
+                        
+                        className="select_due_date"
+                     />
+                  </div>
+               </div>
+
+               <div
+                  style={{ paddingRight: "8em" }}
+                  className="unpaidinvoice_card_details_header"
+               >
+                  <h3>Service Type</h3>
+                  <h3>Tax</h3>
+                  <h3>Service Charge</h3>
+               </div>
+               <div className="unpaidinvoice_card_details_content">
+                  {invoiceServices.map((service, index) => (
+                     <div key={index}>{service}</div>
+                  ))}
+
+                  <div className="invoice_service_add_btn">
+                     <BlueButton
+                        buttonText="+ ADD"
+                        click={(e) => addInvoiceServices(e, <NewServiceInfo />)}
+                     />
+                  </div>
+                  <hr />
                   <ServiceInfo
-                     key={index}
-                     serviceType={service.serviceType}
-                     serviceCharge={service.serviceCharge}
+                     serviceType="Subtotal"
+                     serviceCharge="18,000.00"
+                     boldText
                   />
-               ))}
-               <hr />
-               <ServiceInfo
-                  serviceType="Subtotal"
-                  serviceCharge="18,000.00"
-                  boldText
-               />
-               <ServiceInfo
-                  serviceType="Tax (VAT - 7.5%)"
-                  serviceCharge="1,350.00"
-                  boldText
-               />
-               <ServiceInfo
-                  serviceType="Total"
-                  serviceCharge="18,000.00"
-                  boldText
-               />
+                  <ServiceInfo
+                     serviceType="Tax (VAT - 7.5%)"
+                     serviceCharge="1,350.00"
+                     boldText
+                  />
+                  <ServiceInfo
+                     serviceType="Total"
+                     serviceCharge="18,000.00"
+                     boldText
+                  />
+               </div>
             </div>
          </div>
-      </div>
-   </form>
-);
+
+   );
+};
 
 export default NewInvoiceCard;
