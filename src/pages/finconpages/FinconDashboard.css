@@ -27,4 +27,16 @@
       max-width: 700px;
       padding: 0 1.5em;
    }
+
+   .box_buttons {
+      display: flex;
+      justify-content: center;
+   }
+
+   .reject_modal_decision_btn {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 300px;
+   }
 }

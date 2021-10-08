@@ -4,11 +4,15 @@ import InvoiceCard from "./subcomponents/InvoiceCard";
 import TextArea from "../general/TextArea";
 import BlueButton from "../general/BlueButton";
 import FinconContext from "../../contexts/fincon/FinconContext";
-
+import RejectNotificationModal from "./subcomponents/RejectNotificationModal";
 
 const AcceptRejectInvoice = () => {
-   const { addInvoiceServices, invoiceServices, removeInvoiceServices } =
-      useContext(FinconContext);
+   const {
+      addInvoiceServices,
+      invoiceServices,
+      removeInvoiceServices,
+      handleOpen,
+   } = useContext(FinconContext);
    return (
       <div className="dashboard_view">
          <div className="dashboard_head">
@@ -42,6 +46,7 @@ const AcceptRejectInvoice = () => {
                         style={{ margin: "1em", maxWidth: "300px", flex: "1" }}
                      >
                         <BlueButton
+                           click={handleOpen}
                            buttonText="REJECT"
                            bgColor="linear-gradient(279.3deg, #E61C23 -4.92%, #8B0A0E 107.31%)"
                         />
@@ -96,7 +101,8 @@ const AcceptRejectInvoice = () => {
                      </div>
                   </div>
                </div>
-            </div>
+               </div>
+               <RejectNotificationModal/>
          </div>
       </div>
    );
