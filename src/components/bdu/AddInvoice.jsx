@@ -1,5 +1,5 @@
 import React from "react";
-import NewInvoiceCard from "./subcomponents/NewInvoiceCard";
+import EditInvoiceCard from "./subcomponents/EditInvoiceCard";
 import BlueButton from "../general/BlueButton";
 
 const AddInvoice = () => (
@@ -11,7 +11,7 @@ const AddInvoice = () => (
       </div>
 
       <div className="dashboard_requests">
-         <NewInvoiceCard />
+         <EditInvoiceCard />
          <div style={{ margin: "1em", maxWidth: "300px" }}>
             <BlueButton buttonText="CONFIRM" />
          </div>
