@@ -12,7 +12,6 @@ const WriteOffInvoice = () => {
       addInvoiceServices,
       invoiceServices,
       removeInvoiceServices,
-      handleOpen,
    } = useContext(FinconContext);
    return (
       <div className="dashboard_view">
@@ -30,7 +29,7 @@ const WriteOffInvoice = () => {
          </div>
          <div className="view_all_invoice">
             <NavLink to="editunconfirmedinvoice">
-               <p style={{ margin: 0 }}>Edit this invoice</p>
+               <p style={{ margin: 0 }}>Add Payment</p>
             </NavLink>
          </div>
          <div className="dashboard_requests">
