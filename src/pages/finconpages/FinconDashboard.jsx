@@ -4,6 +4,7 @@ import AcceptRejectInvoice from "../../components/fincon/AcceptRejectInvoice";
 import Dashboard from "../../components/fincon/Dashboard";
 import Navbar from "../../components/fincon/Navbar";
 import PaymentRecords from "../../components/fincon/PaymentRecords";
+import WriteOffInvoice from "../../components/fincon/WriteOffInvoice";
 import NameBar from "../../components/general/NameBar";
 import "./FinconDashboard.css";
 
@@ -24,6 +25,11 @@ const FinconDashboard = () => (
                      exact
                      path="/fincondashboard/acceptrejectinvoice"
                      component={AcceptRejectInvoice}
+                  />
+                  <Route
+                     exact
+                     path="/fincondashboard/writeoffinvoice"
+                     component={WriteOffInvoice}
                   />
                   <Route
                      exact

@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
-import {NavLink} from "react-router-dom"
-import InvoiceCard from "./subcomponents/InvoiceCard";
+import { NavLink } from "react-router-dom";
+import NumberCard from "../general/NumberCard";
 import TextArea from "../general/TextArea";
+import InvoiceCard from "./subcomponents/InvoiceCard";
+import SearchBar from "./subcomponents/SearchBar";
 import BlueButton from "../general/BlueButton";
 import FinconContext from "../../contexts/fincon/FinconContext";
-import RejectNotificationModal from "./subcomponents/RejectNotificationModal";
 
-const AcceptRejectInvoice = () => {
+const WriteOffInvoice = () => {
    const {
       addInvoiceServices,
       invoiceServices,
@@ -16,25 +17,21 @@ const AcceptRejectInvoice = () => {
    return (
       <div className="dashboard_view">
          <div className="dashboard_head">
-            <div className="operations_dashboard_header">
-               <h3>Invoice Application</h3>
+            <div className="fincon_dashboard_header">
+               <NumberCard text="Pending Bills" number={7} />
+               <NumberCard text="Treated Requests" number={5} />
             </div>
          </div>
-         <div className="dashboard_requests">
-            <div className="fincon_invoice_nav_links">
-               <NavLink to="recordpayment">
-                  <h5>Record Payment &gt;&gt;</h5>
-               </NavLink>
-               <NavLink to="writeoffinvoice">
-                  <h5>Write off &gt;&gt;</h5>
-               </NavLink>
-               <NavLink to="invoicecredit">
-                  <h5>Credit &gt;&gt;</h5>
-               </NavLink>
-               <NavLink to="invoicediscount">
-                  <h5>Discount &gt;&gt;</h5>
-               </NavLink>
+
+         <div className="bdu_dashboard_requests">
+            <div className="bdu_searchbar">
+               <SearchBar />
             </div>
+         </div>
+         <div className="view_all_invoice">
+            <NavLink to="editunconfirmedinvoice">
+               <p style={{ margin: 0 }}>Edit this invoice</p>
+            </NavLink>
          </div>
          <div className="dashboard_requests">
             <div className="edit_invoice_forms">
@@ -45,26 +42,17 @@ const AcceptRejectInvoice = () => {
                      <div
                         style={{ margin: "1em", maxWidth: "300px", flex: "1" }}
                      >
-                        <BlueButton
-                           click={handleOpen}
-                           buttonText="REJECT"
-                           bgColor="linear-gradient(279.3deg, #E61C23 -4.92%, #8B0A0E 107.31%)"
-                        />
-                     </div>
-                     <div
-                        style={{ margin: "1em", maxWidth: "300px", flex: "1" }}
-                     >
                         <BlueButton buttonText="CONFIRM" />
                      </div>
                   </div>
                </div>
                <div className="edit_invoice_reason">
                   <div className="operations_dashboard_header">
-                     <h3>Reason(s) for Rejection</h3>
+                     <h3>Reason(s) for Reasons for Write-Off</h3>
                   </div>
 
                   <div className="edit_invoice_reason_textarea">
-                     <TextArea placeholder="Increase in price for......" />
+                     <TextArea placeholder="No charge....." />
                      {invoiceServices.map((service, index) => (
                         <div key={index}>{service}</div>
                      ))}
@@ -102,10 +90,9 @@ const AcceptRejectInvoice = () => {
                   </div>
                </div>
             </div>
-            <RejectNotificationModal />
          </div>
       </div>
    );
 };
 
-export default AcceptRejectInvoice;
+export default WriteOffInvoice;
