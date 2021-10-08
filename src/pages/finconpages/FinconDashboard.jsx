@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AcceptRejectInvoice from "../../components/fincon/AcceptRejectInvoice";
 import Dashboard from "../../components/fincon/Dashboard";
 import Navbar from "../../components/fincon/Navbar";
 import NameBar from "../../components/general/NameBar";
@@ -17,6 +18,11 @@ const FinconDashboard = () => (
                      exact
                      path="/fincondashboard/a"
                      component={Dashboard}
+                  />
+                  <Route
+                     exact
+                     path="/fincondashboard/acceptrejectinvoice"
+                     component={AcceptRejectInvoice}
                   />
                </Switch>
             </div>

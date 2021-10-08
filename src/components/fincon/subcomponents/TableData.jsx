@@ -21,7 +21,10 @@ const TableData = () => {
                <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
                   <p style={{ margin: 0 }}>Add Payment</p>
                </NavLink>
-               <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+               <NavLink
+                  style={{ textDecoration: "none" }}
+                  to="acceptrejectinvoice"
+               >
                   <p style={{ margin: 0 }}>View</p>
                </NavLink>
             </div>

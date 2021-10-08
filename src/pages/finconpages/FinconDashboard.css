@@ -1,16 +1,30 @@
 /* fincon_dashboard_header */
 
 @media (min-width: 700px) {
-.fincon_dashboard_header {
+   .fincon_dashboard_header {
       display: flex;
       justify-content: space-between;
       max-width: 700px;
    }
 
-.view_all_invoice{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.5em;
-}
+   .view_all_invoice {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1.5em;
+   }
+   .fincon_invoice_decision_btns {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+   }
 
+   .fincon_invoice_nav_links a {
+      color: #002564;
+   }
+   .fincon_invoice_nav_links {
+      display: flex;
+      justify-content: space-between;
+      max-width: 700px;
+      padding: 0 1.5em;
+   }
 }

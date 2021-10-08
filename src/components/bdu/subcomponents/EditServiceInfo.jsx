@@ -1,12 +1,9 @@
-import React, { useContext } from "react";
-import BduContext from "../../../contexts/bdu/BduContext";
+import React from "react";
 import FormGroup from "../../general/FormGroup";
 import SelectionField from "./SelectionField";
 import "./ServiceInfo.css";
 
-const EditServiceInfo = ({ serviceType, inputValue }) => {
-   const { removeInvoiceServices } = useContext(BduContext);
-   return (
+const EditServiceInfo = ({ serviceType, inputValue }) => (
       <div className="new_service_info">
          <span
             style={{
@@ -46,6 +43,5 @@ const EditServiceInfo = ({ serviceType, inputValue }) => {
          
       </div>
    );
-};
 
 export default EditServiceInfo;

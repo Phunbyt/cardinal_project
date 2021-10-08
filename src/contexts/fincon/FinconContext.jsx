@@ -8,7 +8,21 @@ export const FinconContextProvider = ({ children }) => {
 
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState('');
+   const [invoiceServices, setInvoiceServices] = useState([]);
 
+const removeInvoiceServices = (e) => {
+   const targetElement = e;
+   const newInvoiceServices = [...invoiceServices];
+   const index = newInvoiceServices.indexOf(targetElement);
+   newInvoiceServices.splice(index, 1);
+   setInvoiceServices(newInvoiceServices);
+};
+
+const addInvoiceServices = (e, serviceField) => {
+   e.preventDefault();
+   const newFields = [...invoiceServices, serviceField];
+   setInvoiceServices(newFields);
+};
 
 
    
@@ -44,6 +58,9 @@ export const FinconContextProvider = ({ children }) => {
       open,
       handleClose,
       handleSubmit,
+      addInvoiceServices,
+      invoiceServices,
+      removeInvoiceServices,
    };
    return (
       <FinconContext.Provider value={state}>
