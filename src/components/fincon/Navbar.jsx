@@ -10,21 +10,20 @@ import reportsIcon from '../../assets/reports.png';
 import cardinalLogo from '../../assets/CSRLLogo1.png';
 
 const navItems = [
-   
    {
-      linkPath: '/fincondashboard/a',
+      linkPath: "/fincondashboard/a",
       linkIcon: billsIcon,
-      linkText: 'Bills/Invoices',
+      linkText: "Bills/Invoices",
    },
    {
-      linkPath: '/fincondashboard/reports',
+      linkPath: "/fincondashboard/reports",
       linkIcon: reportsIcon,
-      linkText: 'Reports',
+      linkText: "Reports",
    },
    {
-      linkPath: '/fincondashboard/payment',
+      linkPath: "/fincondashboard/paymentrecords",
       linkIcon: paymentIcon,
-      linkText: 'Payment',
+      linkText: "Payment",
    },
 ];
 
