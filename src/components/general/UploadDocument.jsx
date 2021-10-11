@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Button } from "@mui/material";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 
@@ -19,11 +19,10 @@ const UploadDocument = () => (
                multiple
                type="file"
             />
-            Click to choose file{" "}
-            <span style={{ marginLeft: "10px" }}>JPG / PNG {"<= "}100kb </span>
+            Select file (less than 300kb){" "}
          </Button>
       </label>
    </div>
 );
 
-export default UploadDocument
+export default UploadDocument;

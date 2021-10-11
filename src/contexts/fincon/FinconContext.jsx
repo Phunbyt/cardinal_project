@@ -10,6 +10,15 @@ export const FinconContextProvider = ({ children }) => {
    const [selectedItem, setSelectedItem] = useState('');
    const [invoiceServices, setInvoiceServices] = useState([]);
 
+   const [selectedDate, setSelectedDate] = useState(
+      new Date("2020-08-18T21:11:54")
+   );
+
+   
+   const handleDateChange = (newDateValue) => {
+      setSelectedDate(newDateValue);
+   };
+
 const removeInvoiceServices = (e) => {
    const targetElement = e;
    const newInvoiceServices = [...invoiceServices];
@@ -61,6 +70,8 @@ const addInvoiceServices = (e, serviceField) => {
       addInvoiceServices,
       invoiceServices,
       removeInvoiceServices,
+      handleDateChange,
+      selectedDate,
    };
    return (
       <FinconContext.Provider value={state}>

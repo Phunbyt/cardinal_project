@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
 import NumberCard from "../general/NumberCard";
 import TextArea from "../general/TextArea";
 import InvoiceCard from "./subcomponents/InvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
 import BlueButton from "../general/BlueButton";
 import FinconContext from "../../contexts/fincon/FinconContext";
+import AddPaymentButtton from "./subcomponents/AddPaymentButtton";
 
 const WriteOffInvoice = () => {
    const {
@@ -28,9 +28,7 @@ const WriteOffInvoice = () => {
             </div>
          </div>
          <div className="view_all_invoice">
-            <NavLink to="editunconfirmedinvoice">
-               <p style={{ margin: 0 }}>Add Payment</p>
-            </NavLink>
+            <AddPaymentButtton/>
          </div>
          <div className="dashboard_requests">
             <div className="edit_invoice_forms">

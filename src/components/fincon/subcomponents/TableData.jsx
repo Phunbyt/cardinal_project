@@ -18,7 +18,7 @@ const TableData = () => {
       if (status === "partially paid")
          return (
             <div>
-               <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+               <NavLink style={{ textDecoration: "none" }} to="addnewpayment">
                   <p style={{ margin: 0 }}>Add Payment</p>
                </NavLink>
                <NavLink

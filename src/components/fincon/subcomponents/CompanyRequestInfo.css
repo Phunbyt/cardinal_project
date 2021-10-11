@@ -1,0 +1,32 @@
+.company_request_details,
+.unique_company_request_info {
+   border: 1px solid #528dc2;
+   padding: 2em;
+   background: #f4f4f5;
+}
+.unique_company_request_info {
+   max-width: 400px;
+}
+
+.company_request_info_item {
+   margin: 0;
+   display: flex;
+}
+
+.company_request_info_item + .company_request_info_item {
+   margin-top: 1.5em;
+}
+
+.unique_company_request_info_values {
+   text-align: left;
+}
+
+.company_request_details {
+   width: 100%;
+}
+
+.unique_company_request_info_keys {
+   width: 100%;
+   max-width: 200px;
+   text-align: left;
+}

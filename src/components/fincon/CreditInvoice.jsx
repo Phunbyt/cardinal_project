@@ -1,9 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import NumberCard from "../general/NumberCard";
 import ServiceInvoiceCard from "./subcomponents/ServiceInvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
 import BlueButton from "../general/BlueButton";
+import AddPaymentButtton from "./subcomponents/AddPaymentButtton";
 
 const CreditInvoice = () => (
    <div className="dashboard_view">
@@ -20,9 +20,7 @@ const CreditInvoice = () => (
          </div>
       </div>
       <div className="view_all_invoice">
-         <NavLink to="editunconfirmedinvoice">
-            <p style={{ margin: 0 }}>Add Payment</p>
-         </NavLink>
+         <AddPaymentButtton/>
       </div>
       <div className="dashboard_requests">
          <div className="edit_invoice_forms">
