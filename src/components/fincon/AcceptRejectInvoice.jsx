@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import InvoiceCard from "./subcomponents/InvoiceCard";
 import TextArea from "../general/TextArea";
 import BlueButton from "../general/BlueButton";
@@ -31,7 +31,7 @@ const AcceptRejectInvoice = () => {
                <NavLink to="invoicecredit">
                   <h5>Credit &gt;&gt;</h5>
                </NavLink>
-               <NavLink to="invoicediscount">
+               <NavLink to="discountinvoice">
                   <h5>Discount &gt;&gt;</h5>
                </NavLink>
             </div>
