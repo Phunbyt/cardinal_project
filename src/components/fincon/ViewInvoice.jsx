@@ -1,16 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import NumberCard from "../general/NumberCard";
-import TextArea from "../general/TextArea";
 import InvoiceCard from "./subcomponents/InvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
-import BlueButton from "../general/BlueButton";
-import FinconContext from "../../contexts/fincon/FinconContext";
 
-const ViewInvoice = () => {
-   const { addInvoiceServices, invoiceServices, removeInvoiceServices } =
-      useContext(FinconContext);
-   return (
+
+const ViewInvoice = () => (
       <div className="dashboard_view">
          <div className="dashboard_head">
             <div className="fincon_dashboard_header">
@@ -38,10 +33,10 @@ const ViewInvoice = () => {
                <NavLink to="writeoffinvoice">
                   <h5>Write off &gt;&gt;</h5>
                </NavLink>
-               <NavLink to="invoicecredit">
+               <NavLink to="creditinvoice">
                   <h5>Credit &gt;&gt;</h5>
                </NavLink>
-               <NavLink to="invoicediscount">
+               <NavLink to="discountinvoice">
                   <h5>Discount &gt;&gt;</h5>
                </NavLink>
             </div>
@@ -51,6 +46,5 @@ const ViewInvoice = () => {
          </div>
       </div>
    );
-};
 
 export default ViewInvoice;

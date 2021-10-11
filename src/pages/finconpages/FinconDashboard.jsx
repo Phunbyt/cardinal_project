@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AcceptRejectInvoice from "../../components/fincon/AcceptRejectInvoice";
+import CreditInvoice from "../../components/fincon/CreditInvoice";
 import Dashboard from "../../components/fincon/Dashboard";
 import DiscountInvoice from "../../components/fincon/DiscountInvoice";
 import Navbar from "../../components/fincon/Navbar";
@@ -42,6 +43,11 @@ const FinconDashboard = () => (
                      exact
                      path="/fincondashboard/discountinvoice"
                      component={DiscountInvoice}
+                  />
+                  <Route
+                     exact
+                     path="/fincondashboard/creditinvoice"
+                     component={CreditInvoice}
                   />
                   <Route
                      exact

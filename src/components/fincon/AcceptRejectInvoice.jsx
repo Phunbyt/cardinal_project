@@ -28,7 +28,7 @@ const AcceptRejectInvoice = () => {
                <NavLink to="writeoffinvoice">
                   <h5>Write off &gt;&gt;</h5>
                </NavLink>
-               <NavLink to="invoicecredit">
+               <NavLink to="creditinvoice">
                   <h5>Credit &gt;&gt;</h5>
                </NavLink>
                <NavLink to="discountinvoice">
