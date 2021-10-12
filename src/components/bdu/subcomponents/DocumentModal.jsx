@@ -5,8 +5,9 @@ import { Document, Page } from "react-pdf";
 import ArrowBackIosOutlinedIcon from "@mui/icons-material/ArrowBackIosOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
 import BlueButton from "../../general/BlueButton";
-import SecretaryContext from "../../../contexts/secretary/SecretaryContext";
+
 import "./NotificationModal.css";
+import BduContext from "../../../contexts/bdu/BduContext";
 
 const DocumentModal = () => {
    const {
@@ -17,7 +18,7 @@ const DocumentModal = () => {
       url,
       onDocumentLoadSuccess,
       pageNumber,
-   } = useContext(SecretaryContext);
+   } = useContext(BduContext);
 
    return (
       <div>

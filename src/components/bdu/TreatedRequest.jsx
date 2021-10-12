@@ -3,6 +3,7 @@ import CompanyRequestInfo from "./subcomponents/CompanyRequestInfo";
 import RequestDetails from "./subcomponents/RequestDetails";
 import BlueButton from "../general/BlueButton";
 import AttachedFiles from "./subcomponents/AttachedFiles";
+import DocumentModal from "./subcomponents/DocumentModal";
 
 const TreatedRequest = () => (
    <div>
@@ -22,6 +23,7 @@ const TreatedRequest = () => (
       <div className="submit_agm_report_request_btn">
          <BlueButton buttonText="SEND TO SECRETARY" />
       </div>
+      <DocumentModal />
    </div>
 );
 
