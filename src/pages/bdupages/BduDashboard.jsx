@@ -6,6 +6,7 @@ import ConfirmedInvoice from "../../components/bdu/ConfirmedInvoice";
 import Dashboard from "../../components/bdu/Dashboard";
 import EditInvoice from "../../components/bdu/EditInvoice";
 import Navbar from "../../components/bdu/Navbar";
+import Requests from "../../components/bdu/Requests";
 import UnconfirmedInvoice from "../../components/bdu/UnconfirmedInvoice";
 import ViewInvoices from "../../components/bdu/ViewInvoices";
 import NameBar from "../../components/general/NameBar";
@@ -49,6 +50,11 @@ const BduDashboard = () => (
                      exact
                      path="/bdudashboard/editinvoice"
                      component={EditInvoice}
+                  />
+                  <Route
+                     exact
+                     path="/bdudashboard/requests"
+                     component={Requests}
                   />
                </Switch>
             </div>
