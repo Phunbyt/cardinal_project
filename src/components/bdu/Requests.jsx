@@ -12,7 +12,7 @@ const Requests = () => {
    const ViewInvoice = (
       <NavLink
          style={{ color: "#528DC2", textDecoration: "none" }}
-         to="viewinvoice"
+         to="viewtreatedrequest"
       >
          View/Send &gt;&gt;
       </NavLink>
@@ -137,7 +137,7 @@ const Requests = () => {
             </div>
          </div>
          <div className="dashboard_requests_header ">
-            <h3 style={{ fontSize: "2rem" }}>Bills / Invoices</h3>
+            <h3 style={{ fontSize: "2rem" }}>Treated Requests</h3>
          </div>
          <div className="search_options">
             <SearchBar />
