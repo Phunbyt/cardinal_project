@@ -9,6 +9,7 @@ import RelatedRequests from './subcomponents/RelatedRequests';
 import BlueButton from '../general/BlueButton';
 import SecretaryContext from '../../contexts/secretary/SecretaryContext';
 import NotificationModal from './subcomponents/NotificationModal';
+import UploadDocument from '../general/UploadDocument';
 
 const AgmForm = () => {
    const { handleOpen, handleSubmit } = useContext(SecretaryContext);
@@ -60,6 +61,10 @@ const AgmForm = () => {
                      />
 
                      <TextArea headerText="Other infomation" />
+                     <div className="attached_request_document">
+                        <p>Attach Files</p>
+                        <UploadDocument />
+                     </div>
                   </div>
 
                   <div className="request_form_btn">
@@ -74,8 +79,8 @@ const AgmForm = () => {
                <div className="request_links">
                   <RelatedRequests />
                </div>
-               </div>
-               <NotificationModal/>
+            </div>
+            <NotificationModal />
          </div>
       </div>
    );

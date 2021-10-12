@@ -6,6 +6,7 @@ import RelatedRequests from './subcomponents/RelatedRequests';
 import BlueButton from '../general/BlueButton';
 import SecretaryContext from '../../contexts/secretary/SecretaryContext';
 import NotificationModal from './subcomponents/NotificationModal';
+import UploadDocument from '../general/UploadDocument';
 
 const OtherRequests = () => {
    const { handleOpen, handleSubmit } = useContext(SecretaryContext);
@@ -30,6 +31,11 @@ const OtherRequests = () => {
                <form onSubmit={handleSubmit}>
                   <div className="venue_others">
                      <TextArea headerText="Please type your request details here" />
+
+                     <div className="attached_request_document">
+                        <p>Attach Files</p>
+                        <UploadDocument />
+                     </div>
                   </div>
 
                   <div className="request_form_btn">

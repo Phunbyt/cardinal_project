@@ -9,6 +9,7 @@ import RelatedRequests from './subcomponents/RelatedRequests';
 import SecretaryContext from '../../contexts/secretary/SecretaryContext';
 import NotificationModal from './subcomponents/NotificationModal';
 import BlueButton from '../general/BlueButton';
+import UploadDocument from '../general/UploadDocument';
 
 const EmandateForm = () => {
    const { handleOpen, handleSubmit } = useContext(SecretaryContext);
@@ -61,6 +62,11 @@ const EmandateForm = () => {
                         placeholder="Venue"
                         labelFor="venue"
                      />
+
+                     <div className="attached_request_document">
+                        <p>Attach Files</p>
+                        <UploadDocument />
+                     </div>
                   </div>
                   <div className="request_form_btn">
                      <BlueButton

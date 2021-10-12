@@ -10,6 +10,7 @@ import SecretaryContext from '../../contexts/secretary/SecretaryContext';
 
 import BlueButton from '../general/BlueButton';
 import NotificationModal from './subcomponents/NotificationModal';
+import UploadDocument from '../general/UploadDocument';
 
 
 const EaccreditationForm = () => {
@@ -63,6 +64,11 @@ const EaccreditationForm = () => {
                          placeholder="Venue"
                          labelFor="venue"
                       />
+
+                      <div className="attached_request_document">
+                         <p>Attach Files</p>
+                         <UploadDocument />
+                      </div>
                    </div>
                    <div className="request_form_btn">
                       <BlueButton

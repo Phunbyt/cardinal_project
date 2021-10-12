@@ -31,7 +31,7 @@ const Requests = () => (
          </div>
          <div className="dashboard_requests_cards request_cards_shrink">
             <RequestCard
-               linkPath="/agmreport"
+               linkPath="agmreport"
                linkText="AGM Notice"
                linkIcon={blueAgmIcon}
                bgColor="#628395"
@@ -39,7 +39,7 @@ const Requests = () => (
                fontColor="#3568A0"
             />
             <RequestCard
-               linkPath="/egmreport"
+               linkPath="egmreport"
                linkText="EGM Notice"
                linkIcon={blueEgmIcon}
                bgColor="#fbe6c9"
@@ -54,14 +54,14 @@ const Requests = () => (
          </div>
          <div className="dashboard_requests_cards request_cards_shrink">
             <RequestCard
-               linkPath="/emandate"
+               linkPath="emandate"
                linkText="E-mandate"
                linkIcon={blueEmandateIcon}
                bgColor="#787A91"
                fontColor="#3568A0"
             />
             <RequestCard
-               linkPath="/eaccreditation"
+               linkPath="eaccreditation"
                linkText="E-accreditation and AGM"
                linkIcon={blueEaccreditationIcon}
                bgColor="#787A91"
@@ -75,7 +75,7 @@ const Requests = () => (
          </div>
          <div className="dashboard_requests_cards request_cards_shrink">
             <RequestCard
-               linkPath="/otherrequests"
+               linkPath="otherrequests"
                linkText="Other Requests"
                linkIcon={othersIcon}
                bgColor="#141E61"
