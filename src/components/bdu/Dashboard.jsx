@@ -1,28 +1,49 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import NumberCard from "../general/NumberCard";
-import SearchBar from "./subcomponents/SearchBar";
-import TableData from "./subcomponents/TableData";
+import RecentRequests from "./subcomponents/RecentRequests";
+import RecentBills from "./subcomponents/RecentBills";
 
 const Dashboard = () => (
    <div className="dashboard_view">
       <div className="dashboard_head">
-         <div className="fincon_dashboard_header">
+         <div className="operations_dashboard_header">
+            <h3>Dashboard</h3>
+         </div>
+         <div className="operations_dashboard_header">
             <NumberCard text="Pending Bills" number={7} />
             <NumberCard text="Treated Requests" number={5} />
+            <NumberCard text="Approved Bills / Invoivces" number={2} />
          </div>
       </div>
 
       <div className="dashboard_requests">
-         <SearchBar />
+         <div className="operations_dashboard_header">
+            <h3>Recent Requests</h3>
+            <div className="operation_view_all_invoice">
+               <NavLink
+                  to="null"
+                  style={{ textDecoration: "none", color: "#528DC2" }}
+               >
+                  <h5>VIEW &gt; &gt; </h5>
+               </NavLink>
+            </div>
+         </div>
+         <RecentRequests />
       </div>
       <div className="dashboard_requests">
-         <TableData />
-      </div>
-      <div className="view_all_invoice">
-         <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
-            <p style={{ margin: 0 }}>View all invoice</p>
-         </NavLink>
+         <div className="operations_dashboard_header">
+            <h3>Recent Bills / Invoices Applications</h3>
+            <div className="operation_view_all_invoice">
+               <NavLink
+                  to="null"
+                  style={{ textDecoration: "none", color: "#528DC2" }}
+               >
+                  <h5>VIEW &gt; &gt; </h5>
+               </NavLink>
+            </div>
+         </div>
+         <RecentBills />
       </div>
    </div>
 );
