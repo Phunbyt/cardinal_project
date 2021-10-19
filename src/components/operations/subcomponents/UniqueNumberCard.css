@@ -1,0 +1,27 @@
+@media (min-width: 700px) {
+   .unique_numbercard {
+      padding: 0.5em 1.5em;
+      border-radius: 0.5em;
+      height: 130px;
+      width: 100%;
+      max-width: 300px;
+   }
+   .unique_numbercard a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+   }
+   .unique_numbercard_text p {
+      margin: 0;
+   }
+
+   .unique_numbercard_img{
+      margin-right: 1.5em;
+   }
+
+   .unique_numbercard_text {
+      font-size: 1.2em;
+      font-weight: 800;
+   }
+
+}

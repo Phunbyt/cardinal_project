@@ -4,7 +4,6 @@ import NavItem from "../general/NavItem";
 import billsIcon from "../../assets/bills.png";
 import dashboardIcon from "../../assets/dashboard.png";
 import logoutIcon from "../../assets/logout.png";
-import paymentIcon from "../../assets/payment.png";
 import reportsIcon from "../../assets/reports.png";
 import requestsIcon from "../../assets/requests.png";
 
@@ -30,11 +29,6 @@ const navItems = [
       linkPath: "/operationsdashboard/reports",
       linkIcon: reportsIcon,
       linkText: "Reports",
-   },
-   {
-      linkPath: "/operationsdashboard/payment",
-      linkIcon: paymentIcon,
-      linkText: "Payment",
    },
 ];
 

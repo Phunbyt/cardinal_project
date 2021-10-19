@@ -8,10 +8,13 @@ export const OperationsContextProvider = ({ children }) => {
 
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState('');
+ const [selectedDate, setSelectedDate] = useState(
+    new Date("2020-08-18T21:11:54")
+ );
 
-
-
-   
+   const handleDateChange = (newDateValue) => {
+      setSelectedDate(newDateValue);
+   };
 
    const handleOpen = () => setOpen(true);
 
@@ -44,6 +47,8 @@ export const OperationsContextProvider = ({ children }) => {
       open,
       handleClose,
       handleSubmit,
+      selectedDate,
+handleDateChange
    };
    return (
       <OperationsContext.Provider value={state}>

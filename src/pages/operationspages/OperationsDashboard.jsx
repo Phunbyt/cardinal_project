@@ -7,6 +7,7 @@ import "./OperationsDashboard.css";
 import PastAgm from "../../components/operations/PastAgm";
 import RequestFeedback from "../../components/operations/RequestFeedback";
 import TreatRequest from "../../components/operations/TreatRequest";
+import CreateReport from "../../components/operations/CreateReport";
 
 const OperationsDashboard = () => (
    <div className="secretary_dashboard">
@@ -35,6 +36,11 @@ const OperationsDashboard = () => (
                      exact
                      path="/operationsdashboard/treatrequest"
                      component={TreatRequest}
+                  />
+                  <Route
+                     exact
+                     path="/operationsdashboard/reports"
+                     component={CreateReport}
                   />
                </Switch>
             </div>
