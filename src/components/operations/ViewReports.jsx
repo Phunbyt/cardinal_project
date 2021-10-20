@@ -7,6 +7,7 @@ import companyArray from "./subcomponents/companies";
 import OperationShareCapitalHistory from "./subcomponents/OperationShareCapitalHistory";
 import OperationsDividendsHistory from "./subcomponents/OperationsDividendsHistory";
 import OperationsContext from "../../contexts/operations/OperationsContext";
+import OperationsCurrentMarketTrend from "./subcomponents/OperationsCurrentMarketTrend";
 
 const selectionItems = [
    "Monthly report",
@@ -72,6 +73,9 @@ const ViewReports = () => {
             )}
             {selectedReport[0] === "Dividend history/position" && (
                <OperationsDividendsHistory />
+            )}
+            {selectedReport[0] === "Current Market trends" && (
+               <OperationsCurrentMarketTrend />
             )}
          </div>
       </div>
