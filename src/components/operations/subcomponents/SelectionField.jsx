@@ -3,22 +3,25 @@ import { MenuItem, OutlinedInput, Select } from '@mui/material';
 import OperationsContext from "../../../contexts/operations/OperationsContext";
 
 
-const SelectionField = ({ items, placeholder }) => {
+const SelectionField = ({ items, placeholder, onChangeHandler, selectedValue }) => {
    const { handleSelectionChange, selectedItem } =
       useContext(OperationsContext);
+
+   const selctionChangeHandler = onChangeHandler ?? handleSelectionChange;
+
+   const selectedItemValue = selectedValue ?? selectedItem; 
    return (
       <div className="selection_field">
-
          <Select
             displayEmpty
             fullWidth
-            value={selectedItem}
-            onChange={handleSelectionChange}
+            value={selectedItemValue}
+            onChange={selctionChangeHandler}
             input={<OutlinedInput />}
             renderValue={(selected) => {
                if (selected.length === 0) {
                   return (
-                     <p style={{ margin: 0, color: '#9FA2B4' }}>
+                     <p style={{ margin: 0, color: "#9FA2B4" }}>
                         {placeholder}
                      </p>
                   );

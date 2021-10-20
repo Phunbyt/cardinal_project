@@ -1,5 +1,5 @@
-import React, { createContext, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import React, { createContext, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const OperationsContext = createContext();
 
@@ -7,10 +7,11 @@ export const OperationsContextProvider = ({ children }) => {
    const history = useHistory();
 
    const [open, setOpen] = useState(false);
-   const [selectedItem, setSelectedItem] = useState('');
- const [selectedDate, setSelectedDate] = useState(
-    new Date("2020-08-18T21:11:54")
- );
+   const [selectedItem, setSelectedItem] = useState("");
+   const [selectedReport, setSelectedReport] = useState("");
+   const [selectedDate, setSelectedDate] = useState(
+      new Date("2020-08-18T21:11:54")
+   );
 
    const handleDateChange = (newDateValue) => {
       setSelectedDate(newDateValue);
@@ -35,7 +36,14 @@ export const OperationsContextProvider = ({ children }) => {
       const {
          target: { value },
       } = e;
-      setSelectedItem(typeof value === 'string' ? value.split(',') : value);
+      setSelectedItem(typeof value === "string" ? value.split(",") : value);
+   };
+   const handleReportSelectionChange = (e) => {
+      const {
+         target: { value },
+      } = e;
+      setSelectedReport(typeof value === "string" ? value.split(",") : value);
+      console.log(selectedReport[0]);
    };
 
    const state = {
@@ -48,7 +56,9 @@ export const OperationsContextProvider = ({ children }) => {
       handleClose,
       handleSubmit,
       selectedDate,
-handleDateChange
+      handleDateChange,
+      handleReportSelectionChange,
+      selectedReport,
    };
    return (
       <OperationsContext.Provider value={state}>
