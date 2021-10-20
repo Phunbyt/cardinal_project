@@ -5,11 +5,10 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import TextField from "@mui/material/TextField";
 import OperationsContext from "../../../contexts/operations/OperationsContext";
 
-
 const OperationsDatePicker = () => {
    const { handleDateChange, selectedDate } = useContext(OperationsContext);
    return (
-      <div>
+      <div className="unique_selection_field">
          <LocalizationProvider dateAdapter={DateAdapter}>
             <DesktopDatePicker
                inputFormat="MM/dd/yyyy"
@@ -18,7 +17,6 @@ const OperationsDatePicker = () => {
                renderInput={(params) => (
                   <TextField
                      margin="normal"
-                     
                      variant="outlined"
                      size="small"
                      {...params}

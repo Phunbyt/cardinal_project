@@ -8,6 +8,7 @@ import PastAgm from "../../components/operations/PastAgm";
 import RequestFeedback from "../../components/operations/RequestFeedback";
 import TreatRequest from "../../components/operations/TreatRequest";
 import CreateReport from "../../components/operations/CreateReport";
+import ViewReports from "../../components/operations/ViewReports";
 
 const OperationsDashboard = () => (
    <div className="secretary_dashboard">
@@ -41,6 +42,11 @@ const OperationsDashboard = () => (
                      exact
                      path="/operationsdashboard/reports"
                      component={CreateReport}
+                  />
+                  <Route
+                     exact
+                     path="/operationsdashboard/viewreports"
+                     component={ViewReports}
                   />
                </Switch>
             </div>

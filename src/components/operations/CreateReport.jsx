@@ -16,9 +16,15 @@ const uniqueCardData = [
       text: "Upload Report Data",
       icon: uploadIcon,
       bgColor: "#002564",
+      path: "uploaddata",
    },
 
-   { text: "View Reports", icon: viewIcon, bgColor: "#528DC2" },
+   {
+      text: "View Reports",
+      icon: viewIcon,
+      bgColor: "#528DC2",
+      path: "viewreports",
+   },
 ];
 
 const selectionItems = [
@@ -51,6 +57,7 @@ const CreateReport = () => {
                      text={uniqueCard.text}
                      icon={uniqueCard.icon}
                      bgColor={uniqueCard.bgColor}
+                     path={uniqueCard.path}
                   />
                ))}
             </div>
@@ -93,12 +100,16 @@ const CreateReport = () => {
 
                <OperationsReportTable />
                <div className="submit_agm_report_request_btn">
-                       <BlueButton click={(e) => {
-                           e.preventDefault();
-                       handleOpen();}} buttonText="COMPLETE UPLOAD" />
+                  <BlueButton
+                     click={(e) => {
+                        e.preventDefault();
+                        handleOpen();
+                     }}
+                     buttonText="COMPLETE UPLOAD"
+                  />
                </div>
-               </form>
-               <ReportNotificationModal/>
+            </form>
+            <ReportNotificationModal />
          </div>
       </div>
    );

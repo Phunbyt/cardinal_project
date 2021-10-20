@@ -47,4 +47,35 @@
    .report_form_field_upload {
       max-width: 600px;
    }
+
+   .special_input_field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .special_input_field div {
+      flex: 1;
+   }
+   .unique_selection_field {
+      display: flex;
+   }
+
+   .unique_selection_input_field {
+      margin-left: 1.5em;
+   }
+
+   .unique_selection_field .MuiFormControl-root {
+      margin: 0px;
+   }
+
+   .operations_download_reports {
+      display: flex;
+      justify-content: end;
+      padding: 0;
+   }
+
+   .operations_view_reports {
+      padding: 0 2em;
+   }
 }
