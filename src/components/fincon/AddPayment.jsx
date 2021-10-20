@@ -1,6 +1,5 @@
 import React from "react";
 import NumberCard from "../general/NumberCard";
-import ServiceInvoiceCard from "./subcomponents/ServiceInvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
 import BlueButton from "../general/BlueButton";
 import PaymentInvoiceCard from "./subcomponents/PaymentInvoiceCard";
