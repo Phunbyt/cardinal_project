@@ -10,6 +10,7 @@ import OperationsContext from "../../contexts/operations/OperationsContext";
 import OperationsCurrentMarketTrend from "./subcomponents/OperationsCurrentMarketTrend";
 import OperationsMandatedAccount from "./subcomponents/OperationsMandatedAccount";
 import OperationsOwnershipStructure from "./subcomponents/OperationsOwnershipStructure";
+import OperationGeneralMeeting from "./subcomponents/OperationGeneralMeeting";
 
 const selectionItems = [
    "Monthly report",
@@ -84,6 +85,9 @@ const ViewReports = () => {
             )}
             {selectedReport[0] === "Ownership Structure" && (
                <OperationsOwnershipStructure />
+            )}
+            {selectedReport[0] === "General Meeting Reports" && (
+               <OperationGeneralMeeting />
             )}
          </div>
       </div>

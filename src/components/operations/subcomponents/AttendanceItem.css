@@ -1,0 +1,9 @@
+.ownership_table_item p {
+   margin: 0;
+   flex: 1;
+}
+.ownership_table_item {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5em 1.5em;
+}
