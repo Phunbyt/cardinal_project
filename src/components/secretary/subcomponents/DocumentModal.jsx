@@ -37,7 +37,7 @@ const DocumentModal = () => {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  maxWidth: "500px",
+                  maxWidth: "750px",
                   width: "100%",
                   backgroundColor: "#ffffff",
                   boxShadow: 24,

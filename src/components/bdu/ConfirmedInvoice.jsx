@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import NumberCard from "../general/NumberCard";
 import InvoiceCard from "./subcomponents/InvoiceCard";
 import SearchBar from "./subcomponents/SearchBar";
@@ -19,14 +18,10 @@ const ConfirmedInvoice = () => (
             <SearchBar />
          </div>
       </div>
-      <div className="view_all_invoice">
-         <NavLink to="editunconfirmedinvoice">
-            <p style={{ margin: 0 }}>Edit this invoice</p>
-         </NavLink>
-      </div>
+
       <div className="dashboard_requests">
          <InvoiceCard />
-         <div style={{ margin: '1em', maxWidth: '300px'}}>
+         <div style={{ margin: "1em", maxWidth: "300px" }}>
             <BlueButton buttonText="SEND TO SECRETARY" />
          </div>
       </div>

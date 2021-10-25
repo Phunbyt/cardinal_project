@@ -67,19 +67,19 @@ const Dashboard = () => (
          </div>
          <div className="dashboard_requests_cards">
             <RequestCard
-               linkPath="/agmreport"
+               linkPath="agmreport"
                linkText="New AGM"
                linkIcon={agmIcon}
                bgColor="#9FA2B4"
             />
             <RequestCard
-               linkPath="/vrsbroadcast"
+               linkPath="eaccreditation"
                linkText="VRS Broadcast"
                linkIcon={vrsIcon}
                bgColor="#528DC2"
             />
             <RequestCard
-               linkPath="/monthlyreport"
+               linkPath="reports"
                linkText="Monthly Report"
                linkIcon={reportIcon}
                bgColor="#002564"
@@ -127,7 +127,7 @@ const Dashboard = () => (
             </div>
          </div>
          <div className="price_update">
-                <PriceUpdate data={companyDatas}/>
+            <PriceUpdate data={companyDatas} />
          </div>
       </div>
    </div>

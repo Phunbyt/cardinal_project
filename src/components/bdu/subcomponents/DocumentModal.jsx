@@ -19,7 +19,7 @@ const DocumentModal = () => {
       onDocumentLoadSuccess,
       pageNumber,
    } = useContext(BduContext);
-
+   console.log(url);
    return (
       <div>
          <Modal
@@ -38,7 +38,7 @@ const DocumentModal = () => {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  maxWidth: "500px",
+                  maxWidth: "800px",
                   width: "100%",
                   backgroundColor: "#ffffff",
                   boxShadow: 24,

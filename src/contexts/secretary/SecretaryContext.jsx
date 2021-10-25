@@ -14,7 +14,7 @@ export const SecretaryContextProvider = ({ children }) => {
    const [modalError, setModalError] = useState(null);
    const [pageNumber, setPageNumber] = useState(1);
    const url =
-      "https://cors-anywhere.herokuapp.com/http://www.pdf995.com/samples/pdf.pdf";
+      "https://ocs.fas.harvard.edu/files/ocs/files/undergrad_resumes_and_cover_letters.pdf?m=1598037165";
 
    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

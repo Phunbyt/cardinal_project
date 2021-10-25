@@ -9,12 +9,8 @@ import ServiceInfo from "./ServiceInfo";
 import TaxDeduct from "./TaxDeduct";
 import UniqueServiceInfo from "./UniqueServiceInfo";
 
-const services = [
-   { serviceType: "Share Capital History", serviceCharge: "3,000.00" },
-   { serviceType: "Current Market Trend", serviceCharge: "5,000.00" },
-   { serviceType: "Monthly Report", serviceCharge: "13,000.00" },
-];
-const PaymentInvoiceCard = ({ discount }) => (
+
+const PaymentInvoiceCard = () => (
    <div>
       <div className="unpaidinvoice_card unpaidinvoice_card_white">
          <div className="unpaidinvoice_card_details_content">

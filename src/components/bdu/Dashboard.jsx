@@ -11,8 +11,12 @@ const Dashboard = () => (
             <h3>Dashboard</h3>
          </div>
          <div className="operations_dashboard_header">
-            <NumberCard text="Pending Bills" number={7} />
-            <NumberCard text="Treated Requests" number={5} />
+            <NumberCard text="Assigned Requests" number={7} />
+            <NumberCard
+               text="New Invoice Applications"
+               myPath="addnewinvoice"
+               number={5}
+            />
             <NumberCard text="Approved Bills / Invoivces" number={2} />
          </div>
       </div>

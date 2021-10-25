@@ -6,8 +6,11 @@ import { NavLink } from "react-router-dom";
 
 const RecentRequests = () => {
    const actionBtn = (
-      <NavLink to="null" style={{ textDecoration: 'none',color: "#528DC2" }}>
-         <h4 >VIEW &gt; &gt; </h4>
+      <NavLink
+         to="reports"
+         style={{ textDecoration: "none", color: "#528DC2" }}
+      >
+         <h4>VIEW &gt; &gt; </h4>
       </NavLink>
    );
 

@@ -43,7 +43,6 @@ export const OperationsContextProvider = ({ children }) => {
          target: { value },
       } = e;
       setSelectedReport(typeof value === "string" ? value.split(",") : value);
-      console.log(selectedReport[0]);
    };
 
    const state = {

@@ -18,17 +18,17 @@ const NotificationModal = () => {
          >
             <Box
                style={{
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  transform: 'translate(-50%, -50%)',
-                  maxWidth: '500px',
-                  width: '100%',
-                  backgroundColor: '#ffffff',
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  maxWidth: "500px",
+                  width: "100%",
+                  backgroundColor: "#ffffff",
                   boxShadow: 24,
-                  borderRadius: '8px',
-                  textAlign: 'center',
-                  padding: '1em 0',
+                  borderRadius: "8px",
+                  textAlign: "center",
+                  padding: "1em 0",
                }}
             >
                <div className="modal_info">
@@ -42,16 +42,13 @@ const NotificationModal = () => {
                </div>
 
                <div className="success_btns">
-                  <BlueButton
-                     //  click={createAnotherUser}
-                     buttonText="DONE"
-                  />
+                  <BlueButton click={handleClose} buttonText="DONE" />
                   <div className="dummydiv" />
                   <BlueButton
                      buttonText="SUBMIT ANOTHER"
                      bgColor="#ffffff"
                      textColor="#002564"
-                     //  click={goToDashboard}
+                     click={handleClose}
                   />
                </div>
             </Box>

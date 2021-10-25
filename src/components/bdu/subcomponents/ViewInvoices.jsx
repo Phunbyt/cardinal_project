@@ -17,7 +17,7 @@ const ViewInvoicesData = () => {
            );
 return (
    <div>
-      <NavLink style={{ textDecoration: "none" }} to="unpaidinvoice">
+      <NavLink style={{ textDecoration: "none" }} to="editinvoice">
          <p style={{ margin: 0 }}>Edit Invoice</p>
       </NavLink>
       <NavLink style={{ textDecoration: "none" }} to="unconfirmedinvoice">

@@ -20,7 +20,7 @@ const UnconfirmedInvoice = () => (
          </div>
       </div>
       <div className="view_all_invoice">
-         <NavLink to="editunconfirmedinvoice">
+         <NavLink to="editinvoice">
             <p style={{ margin: 0 }}>Edit this invoice</p>
          </NavLink>
       </div>

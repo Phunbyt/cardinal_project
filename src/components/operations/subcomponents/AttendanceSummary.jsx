@@ -1,7 +1,6 @@
 import React from "react";
 import AttendanceItem from "./AttendanceItem";
 
-
 const RenderLoop = ({
    columnOneText,
    columnTwoText,
@@ -88,7 +87,7 @@ const tableData = [
    },
 ];
 const AttendancSummary = () => (
-   <div style={{ marginTop: "1.5em" }}>
+   <div style={{ marginTop: "5em" }}>
       <div
          style={{
             background: "#1B2058",

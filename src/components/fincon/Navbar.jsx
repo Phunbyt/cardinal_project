@@ -5,7 +5,6 @@ import billsIcon from '../../assets/bills.png';
 
 import logoutIcon from '../../assets/logout.png';
 import paymentIcon from '../../assets/payment.png';
-import reportsIcon from '../../assets/reports.png';
 
 import cardinalLogo from '../../assets/CSRLLogo1.png';
 
@@ -14,11 +13,6 @@ const navItems = [
       linkPath: "/fincondashboard/a",
       linkIcon: billsIcon,
       linkText: "Bills/Invoices",
-   },
-   {
-      linkPath: "/fincondashboard/reports",
-      linkIcon: reportsIcon,
-      linkText: "Reports",
    },
    {
       linkPath: "/fincondashboard/paymentrecords",
