@@ -1,0 +1,26 @@
+.pollgraph {
+   background: #002564;
+   color: #ffffff;
+   padding: 1em 2em;
+   display: flex;
+   flex-direction: column;
+   margin-top: 1.5em;
+}
+
+.poll_graph_item + .poll_graph_item {
+   margin-top: 5em;
+}
+
+.poll_analysis {
+   align-self: flex-end;
+   border: 1px solid #ffffff;
+   width: 100%;
+   max-width: 300px;
+   padding: 1em 2em;
+   border-radius: 1em;
+}
+
+.poll_analysis_card {
+   display: flex;
+   justify-content: space-between;
+} s

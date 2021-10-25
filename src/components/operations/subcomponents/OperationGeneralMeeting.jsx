@@ -1,12 +1,16 @@
-import React from 'react'
-import AttendanceDetails from './AttendanceDetails'
-import AttendancSummary from './AttendanceSummary'
+import React from "react";
+import AttendanceDetails from "./AttendanceDetails";
+import AttendancSummary from "./AttendanceSummary";
+import PollResults from "./PollResults";
+import RegisteredProxy from "./RegisteredProxy";
 
 const OperationGeneralMeeting = () => (
-        <div>
-        <AttendanceDetails />
-        <AttendancSummary/>
-        </div>
-    )
+   <div>
+      <AttendanceDetails />
+      <AttendancSummary />
+      <RegisteredProxy />
+      <PollResults />
+   </div>
+);
 
-export default OperationGeneralMeeting
+export default OperationGeneralMeeting;

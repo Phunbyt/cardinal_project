@@ -6,6 +6,7 @@ const AttendanceItem = ({
    columnTwoText,
    columnThreeText,
    columnFourText,
+   columnFiveText="",
    boldText = false,
    bgColor = "#ffffff",
    textColor = "#000000",
@@ -25,6 +26,7 @@ const AttendanceItem = ({
          <p>{columnTwoText}</p>
          <p>{columnThreeText}</p>
          <p>{columnFourText}</p>
+         <p>{columnFiveText}</p>
       </div>
    );
 };
