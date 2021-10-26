@@ -9,7 +9,10 @@ export const SecretaryContextProvider = ({ children }) => {
 
    const [open, setOpen] = useState(false);
    const [selectedItem, setSelectedItem] = useState("");
-
+   const [selectedReport, setSelectedReport] = useState("");
+   const [selectedDate, setSelectedDate] = useState(
+      new Date("2020-08-18T21:11:54")
+   );
    const [numPages, setNumPages] = useState(null);
    const [modalError, setModalError] = useState(null);
    const [pageNumber, setPageNumber] = useState(1);
@@ -17,6 +20,10 @@ export const SecretaryContextProvider = ({ children }) => {
       "https://ocs.fas.harvard.edu/files/ocs/files/undergrad_resumes_and_cover_letters.pdf?m=1598037165";
 
    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+   const handleDateChange = (newDateValue) => {
+      setSelectedDate(newDateValue);
+   };
 
    const onDocumentLoadSuccess = ({ numPage }) => {
       setNumPages(numPage);
@@ -70,6 +77,13 @@ export const SecretaryContextProvider = ({ children }) => {
       setSelectedItem(typeof value === "string" ? value.split(",") : value);
    };
 
+   const handleReportSelectionChange = (e) => {
+      const {
+         target: { value },
+      } = e;
+      setSelectedReport(typeof value === "string" ? value.split(",") : value);
+   };
+
    const state = {
       selectedItem,
       handleSelectionChange,
@@ -86,6 +100,10 @@ export const SecretaryContextProvider = ({ children }) => {
       pageNumber,
       handleError,
       modalError,
+      handleReportSelectionChange,
+      selectedReport,
+      selectedDate,
+      handleDateChange,
    };
    return (
       <SecretaryContext.Provider value={state}>

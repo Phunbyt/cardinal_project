@@ -1,5 +1,5 @@
 import React from "react";
-import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
+import viewIcon from "../../../assets/see.png";
 
 const AttachedFiles = () => (
    <div style={{ display: "flex" }}>
@@ -11,13 +11,9 @@ const AttachedFiles = () => (
                background: "#f4f4f5",
                margin: 0,
                marginRight: "1em",
-               display: "flex",
-               alignItems: "center",
-               justifyContent: "space-between",
             }}
          >
-            <span style={{ marginRight: "1em" }}> AGM.pdf</span>
-            <CancelOutlinedIcon style={{ color: "#9FA2B4" }} />
+            AGM.pdf
          </p>
          <p
             style={{
@@ -26,14 +22,14 @@ const AttachedFiles = () => (
                background: "#f4f4f5",
                margin: 0,
                marginRight: "1em",
-               display: "flex",
-               alignItems: "center",
-               justifyContent: "space-between",
             }}
          >
-            <span style={{ marginRight: "1em" }}> AGM.pdf</span>
-            <CancelOutlinedIcon style={{ color: "#9FA2B4" }} />
+            AGM.pdf
          </p>
+      </div>
+      <div style={{ opacity: "0.5" }} className="view_document">
+         <img src={viewIcon} alt="viewIcon" />
+         <p style={{ margin: 0 }}>view</p>
       </div>
    </div>
 );

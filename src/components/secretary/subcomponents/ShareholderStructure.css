@@ -1,0 +1,30 @@
+.shareholders_structure_graphs {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   padding: 0;
+}
+
+.unique_poll_graph_item .ownership_table_item p {
+   font-size: 0.8rem;
+   width: 100%;
+}
+.unique_poll_graph_item {
+   width: 100%;
+}
+
+.unique_poll_graph_item + .unique_poll_graph_item {
+   margin-left: 1.5em;
+}
+.shareholding_structure_graph {
+   flex: 2;
+   margin-top: 0;
+}
+.cscs_account_holders_graph {
+   max-width: 300px;
+   flex: 1;
+}
+.shareholders_count_graph {
+   max-width: 300px;
+   flex: 1;
+}

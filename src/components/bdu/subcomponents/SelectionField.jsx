@@ -3,17 +3,24 @@ import { MenuItem, OutlinedInput, Select } from '@mui/material';
 import BduContext from '../../../contexts/bdu/BduContext';
 
 
-const SelectionField = ({ items, placeholder, background="" }) => {
-   const { handleSelectionChange, selectedItem } =
-      useContext(BduContext);
+const SelectionField = ({
+   items,
+   placeholder,
+   onChangeHandler,
+   selectedValue,
+}) => {
+   const { handleSelectionChange, selectedItem } = useContext(BduContext);
+
+   const selctionChangeHandler = onChangeHandler ?? handleSelectionChange;
+
+   const selectedItemValue = selectedValue ?? selectedItem; 
    return (
       <div className="selection_field">
          <Select
             displayEmpty
             fullWidth
-            style={{ backgroundColor: background }}
-            value={selectedItem}
-            onChange={handleSelectionChange}
+            value={selectedItemValue}
+            onChange={selctionChangeHandler}
             input={<OutlinedInput />}
             renderValue={(selected) => {
                if (selected.length === 0) {

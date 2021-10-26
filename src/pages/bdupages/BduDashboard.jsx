@@ -10,6 +10,7 @@ import Requests from "../../components/bdu/Requests";
 import TreatedRequest from "../../components/bdu/TreatedRequest";
 import UnconfirmedInvoice from "../../components/bdu/UnconfirmedInvoice";
 import ViewInvoices from "../../components/bdu/ViewInvoices";
+import ViewReports from "../../components/bdu/ViewReports";
 import NameBar from "../../components/general/NameBar";
 import "./BduDashboard.css";
 
@@ -56,6 +57,11 @@ const BduDashboard = () => (
                      exact
                      path="/bdudashboard/requests"
                      component={Requests}
+                  />
+                  <Route
+                     exact
+                     path="/bdudashboard/reports"
+                     component={ViewReports}
                   />
                   <Route
                      exact

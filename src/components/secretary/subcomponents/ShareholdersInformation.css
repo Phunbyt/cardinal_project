@@ -1,0 +1,18 @@
+.shareholders_by_country {
+   display: flex;
+   width: 100%;
+}
+
+.shareholders_information {
+   display: flex;
+}
+
+.monthly_report_card {
+   width: 100%;
+   margin: 1em;
+   font-size: 12px;
+}
+.right_data{
+   font-size: 12px;
+
+}

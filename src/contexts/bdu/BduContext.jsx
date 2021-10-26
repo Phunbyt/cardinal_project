@@ -10,6 +10,7 @@ export const BduContextProvider = ({ children }) => {
    const [open, setOpen] = useState(false);
    const [invoiceServices, setInvoiceServices] = useState([]);
    const [selectedItem, setSelectedItem] = useState("");
+   const [selectedReport, setSelectedReport] = useState("");
    const [selectedDate, setSelectedDate] = useState(
       new Date("2020-08-18T21:11:54")
    );
@@ -88,6 +89,14 @@ export const BduContextProvider = ({ children }) => {
       setSelectedItem(typeof value === "string" ? value.split(",") : value);
    };
 
+const handleReportSelectionChange = (e) => {
+   const {
+      target: { value },
+   } = e;
+   setSelectedReport(typeof value === "string" ? value.split(",") : value);
+};
+   
+   
    const state = {
       selectedItem,
       handleSelectionChange,
@@ -109,6 +118,10 @@ export const BduContextProvider = ({ children }) => {
       pageNumber,
       handleError,
       modalError,
+      handleReportSelectionChange,
+      selectedReport,
+      selectedDate,
+      handleDateChange,
    };
    return <BduContext.Provider value={state}>{children}</BduContext.Provider>;
 };
