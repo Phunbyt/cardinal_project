@@ -2,9 +2,11 @@ import React from "react";
 import AttendanceItem from "./AttendanceItem";
 import registeredProxy from "./registeredProxyData";
 
-let serialNo = 0;
 
-const RegisteredProxy = () => (
+const RegisteredProxy = () => {
+let serialNo = 0;
+   
+   return (
    <div style={{ marginTop: "1.5em" }}>
       <div
          style={{
@@ -50,6 +52,6 @@ const RegisteredProxy = () => (
          />
       </div>
    </div>
-);
+)};
 
 export default RegisteredProxy;

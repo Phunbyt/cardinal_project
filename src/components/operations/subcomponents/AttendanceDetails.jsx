@@ -13,9 +13,11 @@ const {
    auditors,
    proxies,
 } = meetingData;
-let serialNo = 0;
 
-const AttendanceDetails = () => (
+const AttendanceDetails = () => {
+   let serialNo = 0;
+   return (
+
    <div style={{ marginTop: "1.5em" }}>
       <div
          style={{
@@ -235,6 +237,6 @@ const AttendanceDetails = () => (
          })}
       </div>
    </div>
-);
+)};
 
 export default AttendanceDetails;

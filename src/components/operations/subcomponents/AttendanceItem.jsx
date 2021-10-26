@@ -6,12 +6,14 @@ const AttendanceItem = ({
    columnTwoText,
    columnThreeText,
    columnFourText,
-   columnFiveText="",
+   columnFiveText,
    boldText = false,
+   serialNumberColumn = false,
    bgColor = "#ffffff",
    textColor = "#000000",
 }) => {
    const boldFont = boldText ? "bold" : 400;
+   const addMargin = serialNumberColumn ? "30px" : "none";
    return (
       <div
          className="ownership_table_item"
@@ -22,11 +24,15 @@ const AttendanceItem = ({
             borderBottom: "1px solid #DFE0EB",
          }}
       >
-         <p>{columnOneText}</p>
-         <p>{columnTwoText}</p>
-         <p>{columnThreeText}</p>
-         <p>{columnFourText}</p>
-         <p>{columnFiveText}</p>
+         {columnOneText && (
+            <p style={{ margin: 0, maxWidth: addMargin }}>{columnOneText}</p>
+         )}
+         {columnTwoText && (
+            <p style={{ margin: 0, marginRight: "1em"}}>{columnTwoText}</p>
+         )}
+         {columnThreeText && <p>{columnThreeText}</p>}
+         {columnFourText && <p>{columnFourText}</p>}
+         {columnFiveText && <p>{columnFiveText}</p>}
       </div>
    );
 };

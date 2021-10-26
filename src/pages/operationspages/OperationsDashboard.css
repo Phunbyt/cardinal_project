@@ -78,4 +78,8 @@
    .operations_view_reports {
       padding: 0 2em;
    }
+
+   .report_segment_item{
+      margin-top: 3em;
+   }
 }

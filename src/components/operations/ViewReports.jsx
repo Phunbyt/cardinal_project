@@ -11,18 +11,16 @@ import OperationsCurrentMarketTrend from "./subcomponents/OperationsCurrentMarke
 import OperationsMandatedAccount from "./subcomponents/OperationsMandatedAccount";
 import OperationsOwnershipStructure from "./subcomponents/OperationsOwnershipStructure";
 import OperationGeneralMeeting from "./subcomponents/OperationGeneralMeeting";
+import OperationsMonthlyReport from "./subcomponents/OperationsMonthlyReport";
 
 const selectionItems = [
    "Monthly report",
-   "Virtual Reporting Solution Report",
    "Share Capital History",
    "Dividend history/position",
    "Current Market trends",
    "Ownership Structure",
    "Mandated Accounts",
    "General Meeting Reports",
-   "Previous AGM details ",
-   "Other Relevant Reports",
 ];
 
 const placeholder = "None Selected";
@@ -88,6 +86,9 @@ const ViewReports = () => {
             )}
             {selectedReport[0] === "General Meeting Reports" && (
                <OperationGeneralMeeting />
+            )}
+            {selectedReport[0] === "Monthly report" && (
+               <OperationsMonthlyReport />
             )}
          </div>
       </div>

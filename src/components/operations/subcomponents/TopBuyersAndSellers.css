@@ -1,0 +1,8 @@
+.top_buyers_and_sellers {
+   display: flex;
+   justify-content: space-between;
+}
+.top_buyers {
+   width: 48%;
+   font-size: 12px;
+}
