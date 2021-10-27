@@ -76,7 +76,7 @@ const App = () => (
          </OperationsContextProvider>
 
          <Switch>
-            <Route path="/" component={InitialDemoPage} />
+            <Route exact path="/" component={InitialDemoPage} />
          </Switch>
       </div>
    </Router>
