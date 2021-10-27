@@ -120,8 +120,6 @@ const handleReportSelectionChange = (e) => {
       modalError,
       handleReportSelectionChange,
       selectedReport,
-      selectedDate,
-      handleDateChange,
    };
    return <BduContext.Provider value={state}>{children}</BduContext.Provider>;
 };
