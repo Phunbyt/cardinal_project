@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AddInvoice from "../../components/bdu/AddInvoice";
 import AssignRequest from "../../components/bdu/AssignRequest";
 import ConfirmedInvoice from "../../components/bdu/ConfirmedInvoice";
+import CreateReport from "../../components/bdu/CreateReport";
 import Dashboard from "../../components/bdu/Dashboard";
 import EditInvoice from "../../components/bdu/EditInvoice";
 import Navbar from "../../components/bdu/Navbar";
@@ -61,6 +62,11 @@ const BduDashboard = () => (
                   <Route
                      exact
                      path="/bdudashboard/reports"
+                     component={CreateReport}
+                  />
+                  <Route
+                     exact
+                     path="/bdudashboard/viewreports"
                      component={ViewReports}
                   />
                   <Route

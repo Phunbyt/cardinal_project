@@ -39,13 +39,6 @@ const AdminDashboard = () => {
                cardText="Manage Users"
             />
 
-            <div className="card_line" />
-
-            <LinkCard
-               cardIconSrc={editIcon}
-               cardLink="/createadmin"
-               cardText="Edit Request Requirement"
-            />
          </div>
       </div>
    );

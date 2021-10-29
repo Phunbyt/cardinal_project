@@ -7,7 +7,7 @@ import BlueButton from "../../general/BlueButton";
 
 const RecentRequests = () => {
    const actionBtn = (
-      <NavLink to="viewtreatedrequest" style={{ textDecoration: "none" }}>
+      <NavLink to="assignrequest" style={{ textDecoration: "none" }}>
          <BlueButton bgColor="#528DC2" buttonText="VIEW" />
       </NavLink>
    );

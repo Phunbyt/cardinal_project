@@ -1,7 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 import React from "react";
 import NavItem from "../general/NavItem";
-import billsIcon from "../../assets/bills.png";
 import dashboardIcon from "../../assets/dashboard.png";
 import logoutIcon from "../../assets/logout.png";
 import reportsIcon from "../../assets/reports.png";
@@ -19,11 +18,6 @@ const navItems = [
       linkPath: "/operationsdashboard/requests",
       linkIcon: requestsIcon,
       linkText: "Requests",
-   },
-   {
-      linkPath: "/operationsdashboard/invoices",
-      linkIcon: billsIcon,
-      linkText: "Bills/Invoices",
    },
    {
       linkPath: "/operationsdashboard/reports",

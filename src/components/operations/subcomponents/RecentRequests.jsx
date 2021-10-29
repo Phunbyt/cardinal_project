@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const RecentRequests = () => {
    const actionBtn = (
       <NavLink
-         to="reports"
+         to="treatrequest"
          style={{ textDecoration: "none", color: "#528DC2" }}
       >
          <h4>VIEW &gt; &gt; </h4>

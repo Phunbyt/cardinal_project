@@ -35,7 +35,7 @@ const Dashboard = () => (
          </div>
          <RecentRequests />
       </div>
-      <div className="dashboard_requests">
+      {/* <div className="dashboard_requests">
          <div className="operations_dashboard_header">
             <h3>Recent Bills / Invoices Applications</h3>
             <div className="operation_view_all_invoice">
@@ -48,7 +48,7 @@ const Dashboard = () => (
             </div>
          </div>
          <RecentBills />
-      </div>
+      </div> */}
    </div>
 );
 

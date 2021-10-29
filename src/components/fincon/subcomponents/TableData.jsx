@@ -15,7 +15,7 @@ const TableData = () => {
                </NavLink>
             </div>
          );
-      if (status === "partially paid")
+      if (status === "partially paid" || status === "awaiting confirmation")
          return (
             <div>
                <NavLink style={{ textDecoration: "none" }} to="addnewpayment">
@@ -29,7 +29,7 @@ const TableData = () => {
                </NavLink>
             </div>
          );
-      return '';
+      return "";
    };
    const statusColor = (status) => {
       if (status === "paid")
@@ -40,7 +40,7 @@ const TableData = () => {
          return (
             <p style={{ margin: 0, color: "#B92121" }}>Awaiting Confirmation</p>
          );
-return <p style={{ margin: 0 }}>Not Paid</p>;
+      return <p style={{ margin: 0 }}>Not Paid</p>;
    };
 
    const data = useMemo(

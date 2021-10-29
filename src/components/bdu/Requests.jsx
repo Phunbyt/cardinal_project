@@ -129,7 +129,11 @@ const Requests = () => {
             </div>
             <div className="dashboard_header">
                <NumberCard text="Pending Bills" number={7} />
-               <NumberCard text="Treated Requests" number={5} />
+               <NumberCard
+                  text="Treated Requests"
+                  myPath="requests"
+                  number={5}
+               />
                <CompanyCard
                   logoUrl="https://www.careersinafrica.com/wp-content/uploads/2012/05/Total_Logo_Horizontal.png"
                   companyName="Total Nigeria"
